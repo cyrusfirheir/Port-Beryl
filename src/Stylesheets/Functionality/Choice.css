@@ -1,0 +1,6 @@
+
+.choice {
+  text-align: center;
+  padding: calc(var(--thickness) * 9);
+  border: calc(var(--thickness) * 1) solid var(--baseColor);
+}

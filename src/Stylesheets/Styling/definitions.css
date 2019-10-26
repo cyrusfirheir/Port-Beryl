@@ -1,0 +1,41 @@
+
+:root {
+  /* Big Swatch Colors */
+  --baseColorDark: #151326;
+  --baseColor: #29264D;
+  --baseFontColor: #A7A3CC;
+  --formBaseColor: #F3F2FF;
+  --formBaseColorDark: #DBDAE6;
+  --formFontColor: #3D3D40;
+  --formBorderColor: #7A7980;
+
+  /* UI colors */
+  --link: #CCC6A3;
+  --linkBack: #514D80;
+  --linkBorder: #A7A3CC;
+  --linkHover: #33301F;
+  --linkHoverBack: #807A59;
+  --linkHoverBorder: #FFFBE6;
+
+  /* Fonts */
+  --bodyFont: "VT323";
+  --journalFont: "Reenie-Beanie";
+  --formHeadingFont: "Cinzel";
+  --formFont: "IMFell";
+  --fallbackFont: "Georgia";
+
+  /* Character Speech Color lines */
+  --thickness: 0.5vmin;
+
+  /* Character Speech Colors */
+  --pcColor: #45B5D6;
+  --dadColor: #7C5EEB;
+  --momColor: #F69356;
+
+}
+
+/* Fonts */
+@font-face {font-family: "Cinzel"; src: url("Media/Fonts/Cinzel-regular.ttf");}
+@font-face {font-family: "Reenie-Beanie"; src: url("Media/Fonts/Reenie-Beanie-regular.ttf");}
+@font-face {font-family: "VT323"; src: url("Media/Fonts/VT323-regular.ttf");}
+@font-face {font-family: "IMFell"; src: url("Media/Fonts/IM-Fell-DW-Pica-regular.ttf");}

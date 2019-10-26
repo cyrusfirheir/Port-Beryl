@@ -1,0 +1,9 @@
+:: prologue_08 [fade-3s noOptions]
+<div class="grid-container-title">
+  <div class="game-title">
+    <img src="Media\GameTitle.svg">
+  </div>
+  <div class="game-title-continue">
+    <<link "Continue" "prologue_09">><</link>>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+
+/* -------- transition timings -------- */
+/* default */
+.passage {transition: 0.25s all ease;}
+/* forms */
+.form .passage {transition: 1s all ease;}
+/* timed */
+.fade-1s .passage {transition: 1s all ease;}
+.fade-2s .passage {transition: 2s all ease;}
+.fade-3s .passage {transition: 3s all ease;}
+.fade-4s .passage {transition: 4s all ease;}
+.fade-5s .passage {transition: 5s all ease;}
+.fade-6s .passage {transition: 6s all ease;}
+
+
+/* -------- transition-in styles -------- */
+/* default passage transition (slide-in from right) */
+.passage-in {
+  position: absolute;
+  opacity: 0;
+  margin-top: 0;
+  margin-left: 100%;
+  margin-right: -100%;
+  margin-bottom: 0;
+}
+/* forms passage transition */
+.form .passage-in {
+  position: absolute;
+  opacity: 0;
+  margin-top: -100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100%;
+}
+/* fade-in transitions */
+.fade-1s .passage-in,
+.fade-2s .passage-in,
+.fade-3s .passage-in,
+.fade-4s .passage-in,
+.fade-5s .passage-in,
+.fade-6s .passage-in {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+
+/* -------- transition-out styles -------- */
+/* default (disappear) */
+.passage-out { opacity: 0; }

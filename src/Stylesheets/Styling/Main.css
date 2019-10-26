@@ -1,0 +1,66 @@
+
+*, *::before, *::after {box-sizing: border-box;}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--baseColorDark);
+  color: var(--baseFontColor);
+  font-family: var(--bodyFont), var(--fallbackFont);
+  font-size: 4vmin;
+}
+
+a {
+  color: var(--link);
+  background-color: var(--linkBack);
+  border: var(--thickness) solid var(--linkBorder);
+  border-radius: calc(var(--thickness) * 2);
+  padding: calc(var(--thickness) * 2);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--linkHover);
+  background-color: var(--linkHoverBack);
+  border: var(--thickness) solid var(--linkHoverBorder);
+  border-radius: 0;
+  padding: calc(var(--thickness) * 3);
+  transition: 0.1s all ease-out;
+}
+
+hr { border-color: var(--baseFontColor); }
+
+button {
+  background-color: #ffb2c4;
+  color: #a60029;
+  border-radius: 0.75vmin;
+  border: 0.5vmin solid #a60029;
+}
+
+button:hover {
+  background-color: #a60029;
+  color: #ffb2c4;
+  border: 0.5vmin solid #a60029;
+  transition: 0.5s all ease;
+}
+
+button:active {
+  background-color: #fff2f5;
+  color: #a60029;
+  transition: 0.1s all ease;
+}
+
+#story {
+  margin: 10vmin;
+}
+
+/*Formatting Classes*/
+.passage {
+	text-align: justify;
+  line-height: 200%;
+}
+.i {font-style: italic;}
+.b {font-weight: bold;}
+.u {text-decoration: underline;}
+
+.hidden {display: none;}

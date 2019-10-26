@@ -1,0 +1,18 @@
+:: gameSettings
+
+Zoom:
+<<nobr>>
+  <<for _i, _zoom range $zoomLevels>>
+    <<capture _zoom>>
+      <<link `_zoom + "%"`>>
+        <<run memorize("zoomLevel", _zoom)>>
+        <<set $zoomLevel = recall("zoomLevel")>>
+        <<run cssZoomLevel()>>
+      <</link>>
+    <</capture>>
+  <</for>>
+<</nobr>>
+
+<<link "Restart">>
+  <<run Engine.restart()>>
+<</link>>

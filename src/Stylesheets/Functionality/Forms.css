@@ -1,0 +1,100 @@
+
+.OfficialForm {
+  background-color: var(--formBaseColor);
+  color: var(--formFontColor);
+  font-family: var(--formFont);
+  padding: calc(var(--thickness) * 4);
+  line-height: 100%;
+  border: var(--thickness) solid var(--formFontColor);
+  border-radius: 2.5vmin;
+}
+
+h1 {font-size: 7vmin;}
+h2 {font-size: 6vmin;}
+h3 {font-size: 5vmin;}
+h4 {font-size: 4vmin;}
+h5 {font-size: 3vmin;}
+h6 {font-size: 2vmin;}
+
+.bigText {font-size: 6vmin;}
+.smallText {font-size: 2vmin;}
+
+hr.formSeparator {
+  border-top: var(--thickness) solid var(--formFontColor);
+}
+
+.OfficialForm input[type=text], textarea {
+  background-color: transparent;
+  color: var(--formFontColor);
+  padding: calc(var(--thickness) * 4);
+  margin: 1vmin;
+  max-width: 80%;
+  width: 75%;
+  min-width: 0;
+  transition: 0.25s all ease;
+}
+
+.OfficialForm input[type=text]:hover {
+  background-color: var(--formBaseColor);
+  border-radius: calc(var(--thickness) * 2);
+  border: calc(var(--thickness) * 2) solid var(--formFontColor);
+  transition: 0.25s all ease;
+}
+
+.OfficialForm input[type=text]:focus {
+  background-color: var(--formBaseColorDark);
+  border-radius: calc(var(--thickness) * 2);
+  border: calc(var(--thickness) * 2) solid var(--formFontColor);
+  transition: 0.25s all ease;
+}
+
+.OfficialForm fieldset {
+  display: block;
+  margin-left: 0.5vmin;
+  margin-right: 0.5vmin;
+  padding: calc(var(--thickness) * 4);
+  border: var(--thickness) solid var(--formBaseColorDark);
+  max-width: 80%;
+  width: 75%;
+  min-width: 0;
+}
+
+.OfficialForm legend {
+  padding-left: calc(var(--thickness) * 4);
+  padding-right: calc(var(--thickness) * 4);
+}
+
+.customRadioButton button {
+  background-color: var(--formBaseColorDark);
+  border: var(--thickness) solid var(--formFontColor);
+  border-radius: 50%;
+  position: relative;
+  top: -1vmin;
+}
+
+.customRadioButton button:hover {
+  background-color: transparent;
+  border: var(--thickness) solid var(--formFontColor);
+}
+
+.customRadioButton button:active {
+  background-color: var(--formFontColor);
+  border: var(--thickness) solid var(--formBaseColor);
+}
+
+.customRadioButtonSpacing {
+  display: inline-block;
+  margin: calc(var(--thickness) * 5) calc(var(--thickness) * 10) calc(var(--thickness) * 10) calc(var(--thickness) * 5);
+}
+
+.OfficialForm a {
+  background-color: var(--formBaseColorDark);
+  color: var(--formFontColor);
+  border: var(--thickness) solid var(--formFontColor);
+}
+
+.OfficialForm a:hover {
+  background-color: var(--formBaseColor);
+  color: var(--formFontColor);
+  border: var(--thickness) solid var(--formFontColor);
+}

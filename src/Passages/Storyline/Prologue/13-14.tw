@@ -1,0 +1,183 @@
+:: prologue_13
+
+
+You have zero clue about how your first year of high-school is going to be. Dad says they're fun four years, and your mother agrees, mostly, but you know it's way more complicated than a simple good or not.
+
+Sixth grade was a nightmare for a good part of the year; you can only hope that your first year here at Port Beryl doesn't suck.
+
+Now that you think about it, some part of you is probably glad that you moved out from St. Anne. That city takes a toll on its residents... You remember how frustrated your father could get sometimes.
+
+Well, at least he's chipper now.
+
+@@.choice;
+<<link "Pay attention to what he's saying" "prologue_13a">><</link>>
+<<link "Keep looking out the window" "prologue_13b">><</link>>
+@@
+
+
+
+:: prologue_13a
+
+
+<<speech "Dad">>
+@@.bigText;Oh!@@ By the way, Ivan called us over for dinner tonight.
+<</speech>>
+
+<<speech "Mom">>
+He's still alive, eh?
+<</speech>>
+You sit by, watching her smile at that name... Who is this person?
+
+@@.choice;
+<<link "Ask about Ivan" "prologue_13a2">><</link>>
+<<link "Turn back to the window" "prologue_13b2">><</link>>
+@@
+
+
+
+:: prologue_13a2
+
+
+<<speech "You">>
+Who's Ivan?
+<</speech>>
+Your father chuckles at that.
+
+<<speech "Dad">>
+Ivan's not a who... He's a <i>what.</i> An effing force of nature.
+<</speech>>
+Perhaps noticing your face, the expression currently on it, your mother shares the amusement with Dad.
+
+<<speech "Mom">>
+Yeah. That sounds about right.
+<</speech>>
+
+<<speech "Dad">>
+He's a lot different now, though. Getting married and having a daughter and then this new job... Still the eccentric we love, but toned down. I bet he's reigned things in for Zlata's sake.
+<</speech>>
+
+<<speech "Mom">>
+That the girl?
+<</speech>>
+
+<<speech "Dad">>
+Yup... Ever since Myrna passed, the poor guy's been taking care of Zlata all by himself. He even says the little teen looks like her mother.
+<</speech>>
+
+<<speech "Mom">>
+Gods... How old is she?
+<</speech>>
+
+<<speech "Dad">>
+Not much. A year younger than our peanut here.
+<</speech>>
+
+<<speech "Mom">>
+Weird that I've been out of the loop for such a long time. And <i>you</i> never told me about Myrna!
+<</speech>>
+Maybe it's better that you do not take part in this conversation. Since no one's listening to you anyway, you could just mind your own business, couldn't you?
+
+@@.choice;
+<<link "Demand the whole story" "prologue_13a3">><</link>>
+<<link "Give up and look outside" "prologue_13b3">><</link>>
+@@
+
+
+
+:: prologue_13a3
+
+
+<<speech "You">>
+But who is this Ivan?
+<</speech>>
+
+<<speech "Dad">>
+A childhood friend, you could say... I mean, we were practically brothers who ate and slept at different houses.
+<</speech>>
+You frown.
+
+<<speech "You">>
+Why haven't I heard of him then?
+<</speech>>
+Shrugging as he takes a left, your father glances back over his shoulder.
+
+<<speech "Dad">>
+We lost contact for a while, forgot why friends were needed in the first place... The day I decided to move here, I tracked him down to help me. And guess what? We're still the bestest chums ever. Plus, the dinner is payment for assistance.
+<</speech>>
+
+<<speech "Mom">>
+It's been ages since I met him last... It was the wedding, wasn't it?
+<</speech>>
+
+<<speech "Dad">>
+I'd say so... That was one hell of a day, you know?
+<</speech>>
+As he chats away with your mother, you think over what he said. The thing about needing friends, losing them, and searching again.
+
+@@.choice;
+<<link "Wish for at least one good friend" "prologue_14">><</link>>
+<<link "Hope for a few who'll truly stay close" "prologue_14">><</link>>
+<<link "Maybe relying on others isn't the best idea" "prologue_14">><</link>>
+@@
+
+
+
+:: prologue_13b
+
+
+Moving through the city, you notice how different it is from St. Anne. Back there, everything felt like a buzz, the only constant thing being the mass of people in motion. 24/7.
+
+But here? It's been five minutes since Dad drove out of the station and you're yet to see a crowd bigger than twenty people.
+
+Sure, the place doesn't look like a small town or anything — the tall office towers in the distance dissolve any ideas of that being true — but like your father kept saying, it <i>is</i> peaceful. In a strange way.
+
+From what you remember of the 'research' you did on Port Beryl, a mere two-hundred thousand people live here. Compared to the six million of St. Anne, <i>and</i> the fact that this city is a lot less denser than most, things are bound to look calmer.
+
+@@.choice;
+<<link "Things around you look interesting anyway" "prologue_13b2">><</link>>
+<<link "Ask about the name that was just mentioned" "prologue_13a2">><</link>>
+@@
+
+
+
+:: prologue_13b2
+
+
+It's Sunday today, and as you watch the sights passing you by... A golden beach, people in swimwear, with surf boards, some drinking away with their friends, a bevy of young women playing volleyball — the referee probably concentrating on things which bounce but aren't the ball...
+
+And again, there's so much empty space all around the beachgoers, almost as if the place could fit in a million more of them but decided not to.
+
+There are even skaters going around! One falls on her butt because her partner pulls a trick, but gets right back up, jumps the guy and takes the buffy down with her.
+
+It <i>is</i> in practice just a huge playground. Adults being kids all over the stretch of sand.
+
+@@.choice;
+<<link "Lower the window a bit to feel the air" "prologue_13b3">><</link>>
+<<link "This Ivan seems pretty significant" "prologue_13a3">><</link>>
+@@
+
+
+
+:: prologue_13b3
+
+
+Yup, it's as salty as books and movies and songs and games ever told you. The raw flavor of the sea hits you like a bus, your feels probably exaggerated by the countless times beaches in stories have interested you.
+
+Well, it's damned time your story becomes something you enjoy. That random guy with the bushy beard and tribal tattoos seems to agree too. The air fist was certainly celebratory.
+
+This is a new start, as the movies portray. A fresh beginning. Opportunities and choices and consequences and regrets and all those heavy words float to your head.
+
+What could you possibly want? The beach before your eyes makes you think about it. And perhaps you've never thought about it before either. It's a simple question. What do you want?
+
+@@.choice;
+<<link "Wish for at least one good friend" "prologue_14">><</link>>
+<<link "You've never had feelings for anyone before" "prologue_14">><</link>>
+<<link "Loneliness forces open a person's doors" "prologue_14">><</link>>
+@@
+
+
+
+:: prologue_14
+
+
+prologue_14 placeholder

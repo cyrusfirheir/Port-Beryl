@@ -1,0 +1,69 @@
+:: prologue_09 [fade-1s]
+
+
+<<speech "Dad">>
+@@.bigText;C'mon now, get in here!@@ We've got stuff to do!
+<</speech>>
+Struggling with the huge suitcase you packed, you somehow manage to get through the crowd of people who exited the train with you and see the man standing near the open boot of his pickup. Your father does know how to plan things...
+
+<<speech "You">>
+@@.smallText;Chill out, jeez...@@ I'm coming!
+<</speech>>
+Who the hell would have thought that he'd been cooking this idea in his head for months?
+
+@@.choice;
+<<link "Go to him" "prologue_10">><</link>>
+@@
+
+
+
+:: prologue_10
+
+
+From the biggest metropolis in your state, down to this small city of which you didn't even know the name until he told you.
+
+You've left behind the few friends you had back there, somehow managed to convinced yourself that it isn't <i>that</i> bad; there's a beach, to cry out loud. You've never been to a beach before...
+
+Handing off the case to your father, you walk around the truck, thinking about just how fast everything changed.
+
+@@.choice;
+<<link "Get in" "prologue_11">><</link>>
+@@
+
+
+
+:: prologue_11
+
+
+You climb inside and shimmy over to the other end of the backseat, slumping into the softness. After the five hours on that train, pretty much everything feels like heaven...
+
+<<speech "Dad">>
+Everyone set?
+<</speech>>
+
+<<speech "Mom">>
+Cut the camping trip BS, <<= $Dad.firstName>>... @@.smallText;I'm tired.@@
+<</speech>>
+
+<<speech "Dad">>
+Aw... @@.bigText;Off we go then!@@
+<</speech>>
+
+@@.choice;
+<<link "Lean back" "prologue_12">><</link>>
+@@
+
+
+
+:: prologue_12
+
+
+It's already September and school's begun in most places. You don't know how Valerian High is going to be. From what you've heard so far, it's a place with a good crowd, but until you see for yourself, what even is the truth?
+
+Does the school really host the biggest cultural events in the entire city?
+
+And all those rumors about the entire faculty being a young batch of fresh minds? They said that even the principal was under fifty... Back at St. Anne, your middle-school teachers were dinosaurs who didn't tolerate anything.
+
+@@.choice;
+<<link "Look out the window" "prologue_13">><</link>>
+@@

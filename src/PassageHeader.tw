@@ -1,0 +1,21 @@
+:: PassageHeader [nobr]
+
+<<if !(Story.get(passage()).tags.includes("noOptions"))>>
+
+<p align="center">
+
+<div class="uiHeader">
+
+  <<link "...">>
+    <<run showOptions()>>
+  <</link>>
+
+  <div id="options-container">
+    <<include "Options">>
+  </div>
+
+</div>
+
+
+</p>
+<</if>>

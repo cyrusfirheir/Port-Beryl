@@ -1,0 +1,59 @@
+:: prologue_05
+
+
+Typing away your details into the exhaustive form, you stretch your legs out before you, bumping into another pair, your mother's.
+
+She doesn't react. But you watch her watch outside the window, dark hair framing her bespectacled face.
+
+<<speech "Mom">>
+@@.smallText;Another hour...@@
+<</speech>>
+That sigh tells you she's as bored as you are. Train rides never were fun for either of you. She's already reluctant to travel long distances, and on top of that, she prefers roads over rails. It won't be incorrect to assume she wants a bed to sink into sometime soon.
+
+@@.choice;
+<<link "Get her attention" "prologue_06">><</link>>
+@@
+
+
+
+:: prologue_06
+
+
+<<speech "You">>
+Mom?
+<</speech>>
+
+<<speech "Mom">>
+Hm?
+<</speech>>
+
+@@.choice;
+<<link "Ask her something" "prologue_07">><</link>>
+@@
+
+
+
+:: prologue_07
+
+
+<<speech "You">>
+Have you ever been to Port Beryl? Before this?
+<</speech>>
+
+<<speech "Mom">>
+Once...
+<</speech>>
+A faint smile floats onto her face and you turn to your father for answers.
+
+<<speech "Dad">>
+Hehe... We spent our honeymoon there. An entire week near the beach. Went exploring the rocky side... Even found a little hideout in there. Warm, and cozy, and-
+<</speech>>
+
+<<speech "You">>
+Okay, okay! I get the picture! No need to give me visuals now...
+<</speech>>
+Visibly flustered, you return to the screen, finishing up on the form before you.
+
+@@.choice;
+<<link "Submit the thing" "prologue_08">><</link>>
+@@

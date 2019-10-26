@@ -1,0 +1,46 @@
+
+.speech {
+  line-height: 120%;
+}
+
+.speech fieldset {
+  border: 0 solid transparent;
+  padding: 0;
+}
+
+.speech legend {
+  float: left;
+  position: relative;
+  top: -5vmin;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+  background-color: var(--baseColor);
+}
+
+.speechNPC {
+  display: block;
+  background-color: var(--baseColor);
+  outline: 2vmin solid var(--baseColor);
+  border-left: var(--thickness) solid red;
+  padding: 2.5vmin;
+  animation: blink 1s ease infinite normal;
+}
+
+.speechPC {
+  display: block;
+  background-color: var(--baseColor);
+  outline: 2vmin solid var(--baseColor);
+  border-right: var(--thickness) solid var(--pcColor);
+  padding: 2.5vmin;
+  text-align-last: right;
+  animation: blink 1s ease 0.5s infinite normal;
+}
+
+@keyframes blink {
+   50% { border-color: transparent; }
+}
+
+
+/* Character specific colors */
+.Dad {border-left: var(--thickness) solid var(--dadColor);}
+.Mom {border-left: var(--thickness) solid var(--momColor);}

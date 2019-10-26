@@ -1,0 +1,32 @@
+
+.grid-container-title {
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 0.75fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". gameTitle ."
+    ". continueButton .";
+
+}
+
+@media (orientation: portrait) {
+  .grid-container-title {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.7fr 0.5fr 0.7fr;
+    grid-template-areas:
+      "gameTitle"
+      "."
+      "continueButton";
+  }
+}
+
+.game-title {
+  grid-area: gameTitle;
+}
+
+.game-title-continue {
+  grid-area: continueButton;
+  place-self: center;
+}

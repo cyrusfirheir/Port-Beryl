@@ -1,0 +1,71 @@
+
+.uiHeader {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2000;
+  padding: 2vmin;
+}
+
+.uiHeader::before {
+  content: "";
+  background-image: linear-gradient(180deg, var(--baseColor), transparent);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+}
+
+#options-container {
+  transition: all 0s 0s, margin-top 0.5s, opacity 0.25s ease;
+  position: absolute;
+  z-index: -1000;
+  left: 50%;
+  width: 50%;
+  margin-top: -100%;
+  opacity: 0;
+}
+
+#options-container.show {
+  z-index: -1;
+  transition: all 0.25s, opacity 0.5s 0.1s ease;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.options-overlay {
+  position: absolute;
+  left: -110%;
+  top: -20vmin;
+  width: 0;
+  height: 0;
+  background-color: var(--baseColorDark);
+  opacity: 0.75;
+  z-index: -1;
+}
+
+#options-container.show .options-overlay {
+  width: 120vw;
+  height: 120vh;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+.options {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 75vh;
+  background-image: radial-gradient(circle, transparent 50%, var(--baseColor));
+  border-radius: 1.5vmin;
+  position: relative;
+  z-index: -1;
+  left: -75%;
+  width: 150%;
+  padding: 5vmin;
+  margin-top: 5vh;
+}
+
+#options-container.show .options { z-index: 500; }

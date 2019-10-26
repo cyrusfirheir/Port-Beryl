@@ -1,0 +1,65 @@
+:: prologue_04 [form noOptions]
+<div class="OfficialForm"><p align="center">
+  <<nobr>>
+    <br>
+    <h1>Valerian High</h1>
+    <br>
+    <hr class="formSeparator"><br>
+    @@.i;.smallText;Application form for admittance into Valerian High. Applying students are requested to fill their details in sentence case. (First letter: uppercase; subsequent ones: lowercase.) Fields/options marked with * are mandatory.@@<br><br>
+  <</nobr>>
+  <fieldset><<nobr>>
+    <legend>Name</legend>
+
+    @@.i;.smallText;(First Name)*@@<</nobr>>
+    <<textbox "$PC.firstName" "" autofocus>>
+    @@.i;.smallText;(Middle Name)@@
+    <<textbox "$PC.middleName" "">>
+    @@.i;.smallText;(Last Name)*@@
+    <<textbox "$PC.lastName" "">>
+  </fieldset>
+  <<set $PC.sex = "">>
+  <fieldset><legend>Sex:* <span id="sex"></span></legend><<nobr>>
+    @@.customRadioButtonSpacing;
+      <<customButton "customRadioButton">>
+        <<set $PC.sex = setup.sex.MALE>>
+        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+      <</customButton>>
+      Male
+    @@
+    @@.customRadioButtonSpacing;
+      <<customButton "customRadioButton">>
+        <<set $PC.sex = setup.sex.FEMALE>>
+        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+      <</customButton>>
+    Female
+    @@
+    @@.customRadioButtonSpacing;
+      <<customButton "customRadioButton">>
+        <<set $PC.sex = setup.sex.OTHER>>
+        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+      <</customButton>>
+    Other
+    @@
+    <</nobr>>
+  </fieldset>
+  <<link "Next">>
+    <<if ($PC.firstName == "") or ($PC.lastName == "") or ($PC.sex == "")>>
+      <<replace "#warning">>
+        @@.i;.smallText;One or more fields/options marked * are blank. Please fill them in.@@
+      <</replace>>
+    <<else>>
+      <<set $PC.firstName = setup.toSentenceCase($PC.firstName)>>
+      <<set $PC.middleName = setup.toSentenceCase($PC.middleName)>>
+      <<set $PC.lastName = setup.toSentenceCase($PC.lastName)>>
+      <<set $Dad.lastName = $PC.lastName>>
+      <<set $Mom.lastName = $PC.lastName>>
+      <<set $Neil.lastName = $PC.lastName>>
+      <<set $Nisa.lastName = $PC.lastName>>
+      <<goto "prologue_05">>
+    <</if>>
+  <</link>>
+
+  <span id = "warning"></span>
+
+  </p>
+</div>

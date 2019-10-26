@@ -1,0 +1,9 @@
+:: StoryTitle
+Port Beryl
+
+:: StoryData
+{
+	"ifid": "221CF3AA-B637-40CF-9AE0-C8A21A4AAF4A",
+	"format": "SugarCube",
+	"format-version": "2.30.0"
+}
