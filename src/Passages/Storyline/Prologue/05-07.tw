@@ -19,7 +19,7 @@ That sigh tells you she's as bored as you are. Train rides never were fun for ei
 :: prologue_06
 
 
-<<speech "You">>
+<<speech "PC">>
 Mom?
 <</speech>>
 
@@ -36,7 +36,7 @@ Hm?
 :: prologue_07
 
 
-<<speech "You">>
+<<speech "PC">>
 Have you ever been to Port Beryl? Before this?
 <</speech>>
 
@@ -49,7 +49,7 @@ A faint smile floats onto her face and you turn to your father for answers.
 Hehe... We spent our honeymoon there. An entire week near the beach. Went exploring the rocky side... Even found a little hideout in there. Warm, and cozy, and-
 <</speech>>
 
-<<speech "You">>
+<<speech "PC">>
 Okay, okay! I get the picture! No need to give me visuals now...
 <</speech>>
 Visibly flustered, you return to the screen, finishing up on the form before you.

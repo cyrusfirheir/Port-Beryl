@@ -3,27 +3,32 @@ Macro.add('speech', {
 	tags     : null,
 	handler  : function () {
 
-    var characterName = this.args[0];
+    var characterID = this.args[0];
+		var characterColor = characterID;
 		var displayedName = "";
 		var characterType = "";
 
-		if (this.args.length > 1) {
+		//if char doesn't exist
+		if (typeof(State.variables.Characters[characterID]) == "undefined") {
+			displayedName = "???";
+			characterColor = "default";
+		} else if (this.args.length > 1) {
 			displayedName = this.args[1];
 		} else {
-			displayedName = characterName;
+			displayedName = characterID;
 		}
 
-    switch (characterName) {
+    switch (characterID) {
 
-      case "You":
+      case "PC":
           characterType = "PC";
 					displayedName = "";
-		break;
-		
+					break;
+
       default:
           characterType = "NPC";
-		break;
-		
+					break;
+
     }
 
     var wiki = this.payload[0].contents.trim();
@@ -31,9 +36,10 @@ Macro.add('speech', {
     if (wiki === '') {return;}
 
 		var output = '<div class = "speech"><fieldset><legend>' + displayedName + '</legend>';
-		output += '<span class="speech' + characterType + ' ' + characterName + '"><br>';
-    	output += wiki;
+		output += '<span class="speech' + characterType + '"' + ' style="border-color: var(--' + characterColor + 'Color);"><br>';
+    output += wiki;
 		output += '</span></fieldset></div>';
 		$(this.output).wiki(output);
+
 	}
 });

@@ -1,21 +1,32 @@
 :: StoryInit
 
 <<set $debug = true>>
+
 <<set $zoomLevels = [75, 80, 85, 90, 95, 100, 110, 125, 135]>>
 <<set $zoomLevel = 100>>
 <<run cssZoomLevel()>>
-<<set $currentSubOption = setup.SubOptions.GAMESETTINGS>>
+
+<<set $subOptions = [
+  { id: "quests" , display: "Tasks" }
+, { id: "statusEffects", display: "Cards" }
+, { id: "contacts", display: "Contacts" }
+, { id: "environmentDetails", display: "Environment" }
+, { id: "gameSettings", display: "Settings" }
+]>>
+<<set $currentSubOption = "gameSettings">>
 
 
-<<set	$PC	= new Person({	firstName: "Lara",	middleName: "",	lastName: "Stevens",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Dad	= new Person({	firstName: "Andy",	middleName: "Mosher",	lastName: "Stevens",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.MALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Mom	= new Person({	firstName: "Caja",	middleName: "",	lastName: "Stevens",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Neil	= new Person({	firstName: "Neil",	middleName: "",	lastName: "Stevens",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.MALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Nisa	= new Person({	firstName: "Nisa",	middleName: "",	lastName: "Stevens",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Ivan	= new Person({	firstName: "Ivan",	middleName: "",	lastName: "De Boer",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.MALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Zlata	= new Person({	firstName: "Zlata",	middleName: "Ivana",	lastName: "De Boer",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Jasmin	= new Person({	firstName: "Jasmin",	middleName: "",	lastName: "Cochran",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Caden	= new Person({	firstName: "Caden",	middleName: "Daniel",	lastName: "Nicholson",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.MALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Leila	= new Person({	firstName: "Leila",	middleName: "",	lastName: "Moon",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Leon	= new Person({	firstName: "Leon",	middleName: "Helge",	lastName: "Olsen",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.MALE,	birthday: [ 0,	0 ]	})>>
-<<set	$Virve	= new Person({	firstName: "Virve",	middleName: "",	lastName: "Vaher",	nick: [],	PCnick: [],	nickPC: [],	sex: setup.sex.FEMALE,	birthday: [ 0,	0 ]	})>>
+<<set $Characters = {
+  PC: {	firstName: "Lara"	, middleName: ""	, lastName: "Stevens"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Dad: {	firstName: "Andy"	, middleName: "Mosher"	, lastName: "Stevens"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "male"	, birthday: [0, 0]	}
+,	Mom: {	firstName: "Caja"	, middleName: ""	, lastName: "Stevens"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Neil: {	firstName: "Neil"	, middleName: ""	, lastName: "Stevens"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "male"	, birthday: [0, 0]	}
+,	Nisa: {	firstName: "Nisa"	, middleName: ""	, lastName: "Stevens"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Ivan: {	firstName: "Ivan"	, middleName: ""	, lastName: "De Boer"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "male"	, birthday: [0, 0]	}
+,	Zlata: {	firstName: "Zlata"	, middleName: "Ivana"	, lastName: "De Boer"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Jasmin: {	firstName: "Jasmin"	, middleName: ""	, lastName: "Cochran"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Caden: {	firstName: "Caden"	, middleName: "Daniel"	, lastName: "Nicholson"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "male"	, birthday: [0, 0]	}
+,	Leila: {	firstName: "Leila"	, middleName: ""	, lastName: "Moon"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+,	Leon: {	firstName: "Leon"	, middleName: "Helge"	, lastName: "Olsen"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "male"	, birthday: [0, 0]	}
+,	Virve: {	firstName: "Virve"	, middleName: ""	, lastName: "Vaher"	, nick: [  ]	, PCnick: [  ]	, nickPC: [  ]	, sex: "female"	, birthday: [0, 0]	}
+}>>

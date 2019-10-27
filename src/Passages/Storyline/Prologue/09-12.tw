@@ -6,7 +6,7 @@
 <</speech>>
 Struggling with the huge suitcase you packed, you somehow manage to get through the crowd of people who exited the train with you and see the man standing near the open boot of his pickup. Your father does know how to plan things...
 
-<<speech "You">>
+<<speech "PC">>
 @@.smallText;Chill out, jeez...@@ I'm coming!
 <</speech>>
 Who the hell would have thought that he'd been cooking this idea in his head for months?
@@ -42,7 +42,7 @@ Everyone set?
 <</speech>>
 
 <<speech "Mom">>
-Cut the camping trip BS, <<= $Dad.firstName>>... @@.smallText;I'm tired.@@
+Cut the camping trip BS, <<= $Characters.Dad.firstName>>... @@.smallText;I'm tired.@@
 <</speech>>
 
 <<speech "Dad">>

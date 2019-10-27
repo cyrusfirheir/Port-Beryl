@@ -4,46 +4,18 @@
 
 <div class="options">
 
-  <span class="quests">
-    <<link "Tasks">>
-      <<set $currentSubOption = setup.SubOptions.QUESTS>>
-      <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-    <</link>>
-  </span>
-
-  <span class="statusEffects">
-    <<link "Cards">>
-      <<set $currentSubOption = setup.SubOptions.STATUSEFFECTS>>
-      <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-    <</link>>
-  </span>
-
-  <span class="contacts">
-    <<link "Contacts">>
-      <<set $currentSubOption = setup.SubOptions.CONTACTS>>
-      <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-    <</link>>
-  </span>
-
-  <span class="environmentDetails">
-    <<link "Environment">>
-      <<set $currentSubOption = setup.SubOptions.ENVIRONMENTDETAILS>>
-      <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-    <</link>>
-  </span>
-
-  <span class="gameSettings">
-    <<link "Settings">>
-      <<set $currentSubOption = setup.SubOptions.GAMESETTINGS>>
-      <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-    <</link>>
-  </span>
-
+  <<for _i, _subOption range $subOptions>>
+    <<capture _subOption>>
+      <<link `_subOption.display`>>
+        <<set $currentSubOption = _subOption.id>>
+        <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
+      <</link>>
+    <</capture>>
+  <</for>>
 
   <div id="subOption">
     <<include $currentSubOption>>
   </div>
-
 
 </div>
 <</nobr>>

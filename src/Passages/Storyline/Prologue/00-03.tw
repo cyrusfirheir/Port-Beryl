@@ -26,7 +26,7 @@ Oh you're up! Good.
 :: prologue_02
 
 
-<<speech "You">>
+<<speech "PC">>
 @@.smallText;Whuh...@@ What happened?
 <</speech>>
 
@@ -42,12 +42,12 @@ Nothing. You just need to fill this up.
 :: prologue_03
 
 
-<<speech "You">>
+<<speech "PC">>
 @@.smallText;Application form for Valerian High...@@ Now? Can't we do it once we get there?
 <</speech>>
 
 <<speech "Dad">>
-We're already a week late, peanut... A day more, and we'll have to pay the late fees too! Save me some money here, and fill this thing up. I'd do it, but you know your stuff. Here, go crazy.
+We're already a week late, peanut... A day more, and I'll have to pay the late fees too! Save me some money here, and fill this thing up. I'd have done it for you, but you know your stuff better. Here, go crazy.
 <</speech>>
 @@.choice;
 <<link "Take the computer" "prologue_04">><</link>>

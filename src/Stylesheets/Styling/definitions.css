@@ -20,17 +20,27 @@
   /* Fonts */
   --bodyFont: "VT323";
   --journalFont: "Reenie-Beanie";
-  --formHeadingFont: "Cinzel";
   --formFont: "IMFell";
+  --sleekFont: "Cinzel";
   --fallbackFont: "Georgia";
 
   /* Character Speech Color lines */
   --thickness: 0.5vmin;
 
   /* Character Speech Colors */
-  --pcColor: #45B5D6;
-  --dadColor: #7C5EEB;
-  --momColor: #F69356;
+  --defaultColor: #8FA7BF;
+  --PCColor: #45B5D6;
+  --DadColor: #E3523D;
+  --MomColor: #9540ED;
+  --NeilColor: #52ED40;
+  --NisaColor: #E6C23C;
+  --IvanColor: #9B94F0;
+  --ZlataColor: #90F0B0;
+  --JasminColor: #9FDB67;
+  --CadenColor: #EB5B5C;
+  --LeilaColor: #82E8C4;
+  --LeonColor: #E8E16F;
+  --VirveColor: #D064F5;
 
 }
 

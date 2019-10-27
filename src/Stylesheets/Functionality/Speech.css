@@ -9,6 +9,8 @@
 }
 
 .speech legend {
+  text-transform: uppercase;
+  font-style: italic;
   float: left;
   position: relative;
   top: -5vmin;
@@ -21,7 +23,10 @@
   display: block;
   background-color: var(--baseColor);
   outline: 2vmin solid var(--baseColor);
-  border-left: var(--thickness) solid red;
+  border-top: 0 solid transparent;
+  border-left: var(--thickness) solid var(--defaultColor);
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
   padding: 2.5vmin;
   animation: blink 1s ease infinite normal;
 }
@@ -30,7 +35,10 @@
   display: block;
   background-color: var(--baseColor);
   outline: 2vmin solid var(--baseColor);
-  border-right: var(--thickness) solid var(--pcColor);
+  border-top: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-right: var(--thickness) solid var(--PCColor);
+  border-bottom: 0 solid transparent;
   padding: 2.5vmin;
   text-align-last: right;
   animation: blink 1s ease 0.5s infinite normal;
@@ -39,8 +47,3 @@
 @keyframes blink {
    50% { border-color: transparent; }
 }
-
-
-/* Character specific colors */
-.Dad {border-left: var(--thickness) solid var(--dadColor);}
-.Mom {border-left: var(--thickness) solid var(--momColor);}

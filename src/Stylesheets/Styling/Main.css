@@ -10,7 +10,7 @@ body {
   font-size: 4vmin;
 }
 
-a {
+a, a:visited {
   color: var(--link);
   background-color: var(--linkBack);
   border: var(--thickness) solid var(--linkBorder);

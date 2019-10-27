@@ -11,50 +11,50 @@
     <legend>Name</legend>
 
     @@.i;.smallText;(First Name)*@@<</nobr>>
-    <<textbox "$PC.firstName" "" autofocus>>
+    <<textbox "$Characters.PC.firstName" "" autofocus>>
     @@.i;.smallText;(Middle Name)@@
-    <<textbox "$PC.middleName" "">>
+    <<textbox "$Characters.PC.middleName" "">>
     @@.i;.smallText;(Last Name)*@@
-    <<textbox "$PC.lastName" "">>
+    <<textbox "$Characters.PC.lastName" "">>
   </fieldset>
-  <<set $PC.sex = "">>
+  <<set $Characters.PC.sex = "">>
   <fieldset><legend>Sex:* <span id="sex"></span></legend><<nobr>>
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
-        <<set $PC.sex = setup.sex.MALE>>
-        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+        <<set $Characters.PC.sex = "male">>
+        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
       <</customButton>>
       Male
     @@
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
-        <<set $PC.sex = setup.sex.FEMALE>>
-        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+        <<set $Characters.PC.sex = "female">>
+        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
       <</customButton>>
     Female
     @@
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
-        <<set $PC.sex = setup.sex.OTHER>>
-        <<replace "#sex">><<= setup.toSentenceCase($PC.sex)>><</replace>>
+        <<set $Characters.PC.sex = "other">>
+        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
       <</customButton>>
     Other
     @@
     <</nobr>>
   </fieldset>
   <<link "Next">>
-    <<if ($PC.firstName == "") or ($PC.lastName == "") or ($PC.sex == "")>>
+    <<if ($Characters.PC.firstName == "") or ($Characters.PC.lastName == "") or ($Characters.PC.sex == "")>>
       <<replace "#warning">>
         @@.i;.smallText;One or more fields/options marked * are blank. Please fill them in.@@
       <</replace>>
     <<else>>
-      <<set $PC.firstName = setup.toSentenceCase($PC.firstName)>>
-      <<set $PC.middleName = setup.toSentenceCase($PC.middleName)>>
-      <<set $PC.lastName = setup.toSentenceCase($PC.lastName)>>
-      <<set $Dad.lastName = $PC.lastName>>
-      <<set $Mom.lastName = $PC.lastName>>
-      <<set $Neil.lastName = $PC.lastName>>
-      <<set $Nisa.lastName = $PC.lastName>>
+      <<set $Characters.PC.firstName = setup.toSentenceCase($Characters.PC.firstName)>>
+      <<set $Characters.PC.middleName = setup.toSentenceCase($Characters.PC.middleName)>>
+      <<set $Characters.PC.lastName = setup.toSentenceCase($Characters.PC.lastName)>>
+      <<set $Characters.Dad.lastName = $Characters.PC.lastName>>
+      <<set $Characters.Mom.lastName = $Characters.PC.lastName>>
+      <<set $Characters.Neil.lastName = $Characters.PC.lastName>>
+      <<set $Characters.Nisa.lastName = $Characters.PC.lastName>>
       <<goto "prologue_05">>
     <</if>>
   <</link>>

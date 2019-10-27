@@ -25,11 +25,12 @@ A text-based life sim of young high-school characters set in the fictional city 
     - Valerian High's layout.
 
 ### Systems
-- Person.js
+- Speech and coloring.
+- Characters as an object of nested objects. Referencing values can be done with dot notation.
 - *Todo:*
-  - Opinions.js
+  - Opinions.
 
-### Media (Not included in repository)
+### Media (Images and audio files not included in repository)
 - **CSS:**
   - Base colors.
   - Transitions.

@@ -1,13 +1,4 @@
 
-setup.SubOptions = {
-  QUESTS: "quests",
-  STATUSEFFECTS: "statusEffects",
-  CONTACTS: "contacts",
-  ENVIRONMENTDETAILS: "environmentDetails",
-  GAMESETTINGS: "gameSettings"
-}
-
-
 //css zoomLevel
 window.cssZoomLevel = function() {
 

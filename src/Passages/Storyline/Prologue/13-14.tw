@@ -38,7 +38,7 @@ You sit by, watching her smile at that name... Who is this person?
 :: prologue_13a2
 
 
-<<speech "You">>
+<<speech "PC">>
 Who's Ivan?
 <</speech>>
 Your father chuckles at that.
@@ -53,7 +53,7 @@ Yeah. That sounds about right.
 <</speech>>
 
 <<speech "Dad">>
-He's a lot different now, though. Getting married and having a daughter and then this new job... Still the eccentric we love, but toned down. I bet he's reigned things in for Zlata's sake.
+He's a lot different now, though. Getting married and having a daughter and then this new job... Still the eccentric we love, but toned down. I bet he's reigned things in just for Zlata's sake.
 <</speech>>
 
 <<speech "Mom">>
@@ -65,15 +65,15 @@ Yup... Ever since Myrna passed, the poor guy's been taking care of Zlata all by 
 <</speech>>
 
 <<speech "Mom">>
-Gods... How old is she?
+Gods... When did- Scratch that- How old is she?
 <</speech>>
 
 <<speech "Dad">>
-Not much. A year younger than our peanut here.
+The girl's a year younger than our peanut here.
 <</speech>>
 
 <<speech "Mom">>
-Weird that I've been out of the loop for such a long time. And <i>you</i> never told me about Myrna!
+I've been out of the loop for such a long time... And <i>you</i> never told me about Myrna!
 <</speech>>
 Maybe it's better that you do not take part in this conversation. Since no one's listening to you anyway, you could just mind your own business, couldn't you?
 
@@ -87,7 +87,7 @@ Maybe it's better that you do not take part in this conversation. Since no one's
 :: prologue_13a3
 
 
-<<speech "You">>
+<<speech "PC">>
 But who is this Ivan?
 <</speech>>
 
@@ -96,7 +96,7 @@ A childhood friend, you could say... I mean, we were practically brothers who at
 <</speech>>
 You frown.
 
-<<speech "You">>
+<<speech "PC">>
 Why haven't I heard of him then?
 <</speech>>
 Shrugging as he takes a left, your father glances back over his shoulder.
@@ -163,9 +163,9 @@ It <i>is</i> in practice just a huge playground. Adults being kids all over the 
 
 Yup, it's as salty as books and movies and songs and games ever told you. The raw flavor of the sea hits you like a bus, your feels probably exaggerated by the countless times beaches in stories have interested you.
 
-Well, it's damned time your story becomes something you enjoy. That random guy with the bushy beard and tribal tattoos seems to agree too. The air fist was certainly celebratory.
+Well, it's damned time your story becomes something you enjoy. That random bald guy with the bushy beard and tribal tattoos seems to agree too. The air fist was certainly celebratory.
 
-This is a new start, as the movies portray. A fresh beginning. Opportunities and choices and consequences and regrets and all those heavy words float to your head.
+This is a new start, as the movies portray. A fresh beginning. Opportunities and choices and consequences and regrets and other heavy words float to your head.
 
 What could you possibly want? The beach before your eyes makes you think about it. And perhaps you've never thought about it before either. It's a simple question. What do you want?
 
