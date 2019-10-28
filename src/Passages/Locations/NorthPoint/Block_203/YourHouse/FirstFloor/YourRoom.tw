@@ -1,1 +1,42 @@
-:: YourRoom
+:: YourRoom [nobr]
+<br>
+<br>
+
+<<run cleanLocation()>>
+
+<<arrayPush "locationDescriptions">>
+
+    <<= either(
+    "Your comfy bed is set against the left wall alongside the sturdy bookcase."
+    ,
+    "Under the wall-wide poster of your favorite artists, sits the soft haven, your bed."
+    ,
+    "Walls within walls... That's what your bookcase looks like right beside the bed."
+    )>>
+
+  <<nextPush>>
+
+    <<= either(
+    "Your computer sleeps on the heavy hardwood table to the right, which — though you rarely use it — has a lamp on it. They say using a lamp is beneficial. Who knows?"
+    ,
+    "Unlike back at St. Anne, you no longer have separate spaces for studying and using your computer. It's one table now. A big, dark, wooden table."
+    )>>
+
+  <<nextPush>>
+
+    <<= either(
+    "The right wall is inset with a wardrobe where you stash things other than clothes sometimes. Like feelings, perhaps."
+    ,
+    "The only truly private place in your room would be the closet. Amongst the volume of fabric, it's somewhere to hide things."
+    )>>
+
+<</arrayPush>>
+
+
+<<arrayPush "locationChoices">>
+
+<</arrayPush>>
+
+
+<<showDescriptions>>
+<<showChoices>>

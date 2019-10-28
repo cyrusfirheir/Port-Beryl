@@ -1,1 +1,52 @@
-:: YourHouse
+:: YourHouse [nobr]
+<br>
+<br>
+
+<<run cleanLocation()>>
+
+<<arrayPush "locationDescriptions">>
+
+    <<= either(
+    "The double storied building stands like the others on both sides of it, and at first glance — as well as probably every subsequent one too — nothing is special about the place you call home. At least from without."
+    ,
+    "Your house doesn't look any different from the rest around it. Mom doesn't have a knack for gardening, and your father certainly doesn't care for how things look besides the timely paints jobs."
+    ,
+    "Despite it being nice to imagine that your house is a bit extra, you can see it isn't. No pretty plants on the clear patch of land, no ornate metalwork on the windows, no nothing."
+    ,
+    "Other than the dull blue mailbox in sharp contrast to all the other red, orange, and yellow ones around the neighborhood, there isn't really any variety to your house. Perhaps the lack of decor is why you never lose it."
+    )>>
+
+  <<nextPush>>
+
+    <<= either(
+    "Your stone driveway bridges eight strides of soft grass to the concrete sidewalk, its rocky-smooth surface being the deadliest when wet. There's no white picket fence, but it's not the movies anyway."
+    ,
+    "Back at St. Anne, you mowed lawns every week during the summer to earn cash without ever having one of your own. But now, there's the grass, and the machine is somewhere at the back of the house..."
+    )>>
+
+  <<nextPush>>
+
+    <<= either(
+    "The garage with it's clean grey look exists to a side, a peek of maple branches coming out from the back."
+    ,
+    "The balcony above the garage looks pretty decent from here, glass doors and all."
+    )>>
+
+<</arrayPush>>
+
+<<arrayPush "locationChoices">>
+
+    <<link "Go inside" "YourDiningHall">><</link>>
+
+  <<nextPush>>
+
+    <<link "Check the garage" "YourGarage">><</link>>
+
+  <<nextPush>>
+
+    <<link "Slip to the backyard" "YourBackyard">><</link>>
+
+<</arrayPush>>
+
+<<showDescriptions>>
+<<showChoices>>

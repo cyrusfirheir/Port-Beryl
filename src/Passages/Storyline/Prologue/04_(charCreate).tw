@@ -5,7 +5,7 @@
     <h1>Valerian High</h1>
     <br>
     <hr class="formSeparator"><br>
-    @@.i;.smallText;Application form for admittance into Valerian High. Applying students are requested to fill their details in sentence case. (First letter: uppercase; subsequent ones: lowercase.) Fields/options marked with * are mandatory.@@<br><br>
+    @@.i;.smallText;Application form for admittance into Valerian High. Fields/options marked with * are mandatory.@@<br><br>
   <</nobr>>
   <fieldset><<nobr>>
     <legend>Name</legend>

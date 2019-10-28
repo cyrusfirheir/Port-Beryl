@@ -1,1 +1,24 @@
-:: Garage
+:: YourGarage [nobr]
+<br>
+<br>
+
+<<run cleanLocation()>>
+
+<<arrayPush "locationDescriptions">>
+
+<</arrayPush>>
+
+
+<<arrayPush "locationChoices">>
+
+    <<link "Go inside" "YourDiningHall">><</link>>
+
+  <<nextPush>>
+
+    <<link "Get back out" "YourHouse">><</link>>
+
+<</arrayPush>>
+
+
+<<showDescriptions>>
+<<showChoices>>

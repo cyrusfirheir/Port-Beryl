@@ -28,27 +28,11 @@ a:hover {
   transition: 0.1s all ease-out;
 }
 
+@keyframes presence {
+  50% { box-shadow: 0 0 2vmin var(--linkGlow) }
+}
+
 hr { border-color: var(--baseFontColor); }
-
-button {
-  background-color: #ffb2c4;
-  color: #a60029;
-  border-radius: 0.75vmin;
-  border: 0.5vmin solid #a60029;
-}
-
-button:hover {
-  background-color: #a60029;
-  color: #ffb2c4;
-  border: 0.5vmin solid #a60029;
-  transition: 0.5s all ease;
-}
-
-button:active {
-  background-color: #fff2f5;
-  color: #a60029;
-  transition: 0.1s all ease;
-}
 
 #story {
   margin: 10vmin;

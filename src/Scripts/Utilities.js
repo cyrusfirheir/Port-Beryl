@@ -7,3 +7,30 @@ setup.toSentenceCase = function(str) {
     return '';
   }
 };
+
+
+Macro.add('arrayPush', {
+  tags    : ['nextPush'],
+  handler : function () {
+    if (this.payload[0].contents.trim() === '') { return; }
+    var arrayVar = this.args[0];
+    for (var i = 0; i < this.payload.length; i++) {
+      State.variables[arrayVar].push(this.payload[i].contents.trim());
+    }
+  }
+});
+
+
+Macro.add('arraySplice', {
+  tags    : ['nextSplice'],
+  handler : function () {
+    if (this.payload[0].contents.trim() === '') { return; }
+    var arrayVar = this.args[0];
+    var splicePosition = this.args[1];
+    var spliceDelete = 0;
+    if (this.args.length > 2) {spliceDelete = this.args[2];}
+    for (var i = 0; i < this.payload.length; i++) {
+      State.variables[arrayVar].splice(splicePosition, spliceDelete, this.payload[i].contents.trim());
+    }
+  }
+});

@@ -18,7 +18,7 @@ A text-based life sim of young high-school characters set in the fictional city 
     - Journal Writing sequence.
     - Dream sequence.
 - **Locations:**
-  - PC's house and room.
+  - PC's *house* and room.
   - *Todo:*
     - Components of PC's house.
     - Ivan's house.
@@ -26,6 +26,7 @@ A text-based life sim of young high-school characters set in the fictional city 
 
 ### Systems
 - Speech and coloring.
+- Storyline passages can request for location passages and their descriptions/choices alongside making modifications to said properties. Uses arrays and custom macros to get the job done.
 - Characters as an object of nested objects. Referencing values can be done with dot notation.
 - *Todo:*
   - Opinions.
@@ -35,7 +36,7 @@ A text-based life sim of young high-school characters set in the fictional city 
   - Base colors.
   - Transitions.
   - *Todo:*
-    - Character colors.
+    - Character colors (Teachers and other classmates.)
 - **Graphics:**
   - Game Title.
   - Game Icon.

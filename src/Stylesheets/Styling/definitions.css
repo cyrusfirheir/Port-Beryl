@@ -4,6 +4,7 @@
   --baseColorDark: #151326;
   --baseColor: #29264D;
   --baseFontColor: #A7A3CC;
+  --baseComplimentDark: #400010;
   --formBaseColor: #F3F2FF;
   --formBaseColorDark: #DBDAE6;
   --formFontColor: #3D3D40;
@@ -11,11 +12,12 @@
 
   /* UI colors */
   --link: #CCC6A3;
-  --linkBack: #514D80;
+  --linkBack: #454080;
   --linkBorder: #A7A3CC;
   --linkHover: #33301F;
   --linkHoverBack: #807A59;
   --linkHoverBorder: #FFFBE6;
+  --linkGlow: #E65C7E;
 
   /* Fonts */
   --bodyFont: "VT323";

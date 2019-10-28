@@ -1,1 +1,24 @@
-:: Backyard
+:: YourBackyard [nobr]
+<br>
+<br>
+
+<<run cleanLocation()>>
+
+<<arrayPush "locationDescriptions">>
+
+<</arrayPush>>
+
+
+<<arrayPush "locationChoices">>
+
+    <<link "Go Inside" "YourDiningHall">><</link>>
+
+  <<nextPush>>
+
+    <<link "Return to front" "YourHouse">><</link>>
+
+<</arrayPush>>
+
+
+<<showDescriptions>>
+<<showChoices>>
