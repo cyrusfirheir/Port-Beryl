@@ -1,0 +1,21 @@
+:: StoryTriggersInit
+
+<<set $storyEvents = [
+    { triggers      : `
+                      c.hasVisited("prologue_14") &&
+                      c.passage() == "YourDiningHall" &&
+                      v.Characters.PC.lastName == "Stevens"
+                      `
+    , repeat        : 2
+    , destination   : 'prologue_15'
+    }
+  ,
+    { triggers      : `
+                      c.hasVisited("prologue_14", "YourBackyard") &&
+                      c.passage() == "YourGarage" &&
+                      setup.chance(0.5)
+                      `
+    , repeat        : -1
+    , destination   : 'prologue_16'
+    }
+]>>

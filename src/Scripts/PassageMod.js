@@ -15,7 +15,7 @@ Macro.add('showDescriptions', {
 	handler  : function () {
     if (State.variables.customDescriptions) { return; }
     var output = "";
-    for (var i = 0; i < State.variables.locationDescriptions.length; i++ ) {
+    for (let i = 0; i < State.variables.locationDescriptions.length; i++ ) {
       output += State.variables.locationDescriptions[i] + "<br><br>";
     }
 		$(this.output).wiki(output);
@@ -27,7 +27,7 @@ Macro.add('showChoices', {
 	handler  : function () {
     if (State.variables.customChoices) { return; }
 		var output = '<div class="choice">';
-    for (var i = 0; i < State.variables.locationChoices.length; i++ ) {
+    for (let i = 0; i < State.variables.locationChoices.length; i++ ) {
       output += State.variables.locationChoices[i] + "<br>";
     }
     output += '</div>';

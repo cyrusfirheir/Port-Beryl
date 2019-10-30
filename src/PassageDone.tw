@@ -1,3 +1,5 @@
 :: PassageDone
 
 <<run cssZoomLevel()>>
+
+<<run checkForEvents()>>

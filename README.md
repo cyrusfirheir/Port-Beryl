@@ -28,6 +28,7 @@ A text-based life sim of young high-school characters set in the fictional city 
 - Speech and coloring.
 - Storyline passages can request for location passages and their descriptions/choices alongside making modifications to said properties. Uses arrays and custom macros to get the job done.
 - Characters as an object of nested objects. Referencing values can be done with dot notation.
+- Reworked event system to be more legible and friendly. Can take in functions from the SugarCube 2 API as triggers. Each function API has to be explicitly mentioned in the `StoryTriggers.js` file.
 - *Todo:*
   - Opinions.
 
