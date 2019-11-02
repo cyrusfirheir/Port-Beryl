@@ -1,0 +1,21 @@
+:: CharacterInit
+
+<<set $Characters = {
+    PC : {}
+  , Dad : {}
+  , Mom : {}
+  , Neil : {}
+  , Nisa : {}
+  , Ivan : {}
+  , Zlata : {}
+  , Jasmin : {}
+  , Caden : {}
+  , Leila : {}
+  , Leon : {}
+  , Virve : {}
+}>>
+
+<<for _i = 0; _i < Object.keys($Characters).length; _i++>>
+  <<set _charPassage = "Char" + Object.keys($Characters)[_i]>>
+  <<include _charPassage>>
+<</for>>

@@ -1,21 +1,25 @@
-:: Options
-<<nobr>>
+:: Options [nobr]
+
+
 <div class="options-overlay"></div>
 
 <div class="options">
 
-  <<for _i, _subOption range $subOptions>>
-    <<capture _subOption>>
-      <<link `_subOption.display`>>
-        <<set $currentSubOption = _subOption.id>>
-        <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-      <</link>>
-    <</capture>>
-  <</for>>
+  <div id="optionCategory">
+    <<for _subOption range $subOptions>>
+      <<capture _subOption>>
+        <<link `_subOption.display`>>
+          <<set $currentSubOption = _subOption.id>>
+          <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
+        <</link>>
+      <</capture>>
+    <</for>>
+  </div>
+
+  <hr>
 
   <div id="subOption">
     <<include $currentSubOption>>
   </div>
 
 </div>
-<</nobr>>

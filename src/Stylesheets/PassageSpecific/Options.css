@@ -58,7 +58,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 75vh;
-  background-image: radial-gradient(circle, transparent 50%, var(--baseColor));
+  /*background-image: radial-gradient(circle, transparent 50%, var(--baseColor));*/
   border-radius: 1.5vmin;
   position: relative;
   z-index: -1;
@@ -69,3 +69,21 @@
 }
 
 #options-container.show .options { z-index: 500; }
+
+#optionCategory {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+#optionCategory a, #optionCategory a:visited {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#optionCategory a:hover {
+  color: var(--linkBorder);
+  border-color: transparent;
+}

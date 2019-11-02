@@ -46,6 +46,7 @@ A text-based life sim of young high-school characters set in the fictional city 
 - **Art:**
   - *...crickets...*
 - **Sound:**
+  - Mouse-Hover, Mouse-Down, and Menu-Slide.
   - *...actual crickets, cuz sound...*
 
 ##

@@ -1,0 +1,10 @@
+:: CharPC
+
+<<set $Characters.PC = {
+    firstName   : "Lara"
+  , middleName  : ""
+  , lastName    : "Stevens"
+  , sex         : "female"
+  , birthday    : [0,0]
+
+}>>

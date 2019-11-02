@@ -1,0 +1,10 @@
+:: CharVirve
+
+<<set $Characters.Virve = {
+    firstName   : "Virve"
+  , middleName  : ""
+  , lastName    : "Vaher"
+  , sex         : "female"
+  , birthday    : [0,0]
+
+}>>

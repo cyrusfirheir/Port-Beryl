@@ -1,0 +1,97 @@
+
+a, a:visited {
+  display: inline-block;
+  user-select: none;
+  color: var(--link);
+  background-color: var(--linkBack);
+  border: var(--thickness) solid var(--linkBorder);
+  border-radius: calc(var(--thickness) * 2);
+  padding: 0 calc(var(--thickness) * 4);
+  margin: calc(var(--thickness) * 2) 0;
+  transition: all 0.1s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--linkHover);
+  background-color: var(--linkHoverBack);
+  border: var(--thickness) solid var(--linkHoverBorder);
+  border-radius: 0;
+  position: relative;
+  z-index: 5;
+  animation: floating 0.75s ease 0.1s infinite;
+}
+
+a:hover::before {
+  content: '';
+  display: inline;
+  position: absolute;
+  top: calc(var(--thickness) * -1);
+  left: calc(var(--thickness) * -1);
+  bottom: calc(var(--thickness) * -1);
+  width: calc(var(--thickness) * 5);
+  z-index: 5;
+  border: calc(var(--thickness) * 2) solid var(--linkBorder);
+  border-right-color: transparent;
+  animation: enterPseudoLeft 0.1s ease, floatPseudoLeft 0.75s ease 0.1s infinite;
+}
+
+a:hover::after {
+  content: '';
+  display: inline;
+  position: absolute;
+  top: calc(var(--thickness) * -1);
+  right: calc(var(--thickness) * -1);
+  bottom: calc(var(--thickness) * -1);
+  width: calc(var(--thickness) * 5);
+  z-index: 5;
+  border: calc(var(--thickness) * 2) solid var(--linkBorder);
+  border-left-color: transparent;
+  animation: enterPseudoRight 0.1s ease, floatPseudoRight 0.75s ease 0.1s infinite;
+}
+
+a:active {
+  animation: presence 0.5s ease;
+}
+
+@keyframes presence {
+  0% {
+    outline: var(--thickness) solid var(--baseFontColor);
+    outline-offset: calc(var(--thickness) * 5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes floating {
+  50% { opacity: 0.75; }
+}
+
+@keyframes enterPseudoLeft {
+  0% { left: calc(var(--thickness) * -10); opacity: 0; }
+  80% { left: calc(var(--thickness) * -8); opacity: 0.1; }
+}
+
+@keyframes enterPseudoRight {
+  0% { right: calc(var(--thickness) * -10); opacity: 0; }
+  80% { right: calc(var(--thickness) * -8); opacity: 0.1; }
+}
+
+@keyframes floatPseudoLeft {
+  50% {
+    top: calc(var(--thickness) * -3);
+    left: calc(var(--thickness) * -4);
+    bottom: calc(var(--thickness) * -3);
+    opacity: 0.75;
+  }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes floatPseudoRight {
+  50% {
+    top: calc(var(--thickness) * -3);
+    right: calc(var(--thickness) * -4);
+    bottom: calc(var(--thickness) * -3);
+    opacity: 0.75;
+  }
+  100% { filter: hue-rotate(360deg); }
+}

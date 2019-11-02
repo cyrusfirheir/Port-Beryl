@@ -10,28 +10,6 @@ body {
   font-size: 4vmin;
 }
 
-a, a:visited {
-  color: var(--link);
-  background-color: var(--linkBack);
-  border: var(--thickness) solid var(--linkBorder);
-  border-radius: calc(var(--thickness) * 2);
-  padding: calc(var(--thickness) * 2);
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--linkHover);
-  background-color: var(--linkHoverBack);
-  border: var(--thickness) solid var(--linkHoverBorder);
-  border-radius: 0;
-  padding: calc(var(--thickness) * 3);
-  transition: 0.1s all ease-out;
-}
-
-@keyframes presence {
-  50% { box-shadow: 0 0 2vmin var(--linkGlow) }
-}
-
 hr { border-color: var(--baseFontColor); }
 
 #story {

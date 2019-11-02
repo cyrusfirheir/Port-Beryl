@@ -23,4 +23,28 @@ window.cssZoomLevel = function() {
 //options show
 window.showOptions = function() {
   $("#options-container").toggleClass("show");
+  let sound = SimpleAudio.tracks.get("menuSlide").clone();
+  sound.volume(0.5).play();
 }
+
+//keyboard toggles
+$(document).on('keydown', function (ev) {
+	switch (ev.code) {
+    case "KeyE":
+  	case "Escape":
+  		showOptions();
+  		break;
+	}
+});
+
+//hover sound
+$('#story').on('mouseover', 'a', function () {
+  let sound = SimpleAudio.tracks.get("mouseOverLink").clone();
+  sound.volume(0.5).play();
+});
+
+//click sound
+$('#story').on('mousedown', 'a', function () {
+  let sound = SimpleAudio.tracks.get("mouseDownLink").clone();
+  sound.volume(0.5).play();
+});

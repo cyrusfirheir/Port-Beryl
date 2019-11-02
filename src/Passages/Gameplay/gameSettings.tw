@@ -1,8 +1,7 @@
 :: gameSettings
-
 Zoom:
 <<nobr>>
-  <<for _i, _zoom range $zoomLevels>>
+  <<for _zoom range $zoomLevels>>
     <<capture _zoom>>
       <<link `_zoom + "%"`>>
         <<run memorize("zoomLevel", _zoom)>>
