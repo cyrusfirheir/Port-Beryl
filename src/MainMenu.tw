@@ -1,0 +1,15 @@
+:: MainMenu [noOptions nobr fade-1s]
+
+<div id="MainMenuBack"></div>
+
+<div id="MainMenuStuff">
+
+  <img src="Media\GameTitle.svg">
+
+  <div id="MainMenuButtons">
+    <<link "Start new" "prologue_00">><</link>>
+    <<link "Load save">><</link>>
+    <<link "Exit game">><</link>>
+  </div>
+
+</div>

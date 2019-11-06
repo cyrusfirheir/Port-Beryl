@@ -4,3 +4,13 @@
   padding: calc(var(--thickness) * 9);
   border: calc(var(--thickness) * 1) solid var(--baseColor);
 }
+
+.choice button {
+  background-color: transparent;
+  color: var(--baseFontColor);
+  line-height: 100%;
+  transform: scale(2);
+  margin: 2vmin;
+  border: calc(var(--thickness) * 1) solid var(--baseFontColor);
+  animation: floating 1s ease infinite;
+}

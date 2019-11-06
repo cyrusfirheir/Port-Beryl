@@ -1,0 +1,10 @@
+
+.cardOne {
+  line-height: 100%;
+  text-align: justify;
+  text-align-last: right;
+  padding: calc(var(--thickness) * 5);
+  margin: calc(var(--thickness) * 2.5);
+  border-radius: calc(var(--thickness) * 2.5);
+  background-color: var(--baseColor);
+}

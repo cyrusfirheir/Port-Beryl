@@ -3,9 +3,13 @@
 
 Sound of the train entering a tunnel is all it takes for you to wake up. It's almost pitch black outside the window, but the bright light of your father's laptop illuminates the space well enough. It's noon, by the looks of your watch, and you are hungry.
 
+
 @@.choice;
 <<link "Sit up straight" "prologue_01">><</link>>
 @@
+
+
+
 
 
 
@@ -14,16 +18,22 @@ Sound of the train entering a tunnel is all it takes for you to wake up. It's al
 
 You push away from against the corner and rub your eyes, debating whether to turn and go back to sleeping.
 
+
 <<speech "Dad">>
 Oh you're up! Good.
 <</speech>>
+
 @@.choice;
 <<link "Ask him what's up" "prologue_02">><</link>>
 @@
 
 
 
+
+
+
 :: prologue_02
+
 
 
 <<speech "PC">>
@@ -33,13 +43,18 @@ Oh you're up! Good.
 <<speech "Dad">>
 Nothing. You just need to fill this up.
 <</speech>>
+
 @@.choice;
 <<link "Look closer" "prologue_03">><</link>>
 @@
 
 
 
+
+
+
 :: prologue_03
+
 
 
 <<speech "PC">>
@@ -49,6 +64,7 @@ Nothing. You just need to fill this up.
 <<speech "Dad">>
 We're already a week late, peanut... A day more, and I'll have to pay the late fees too! Save me some money here, and fill this thing up. I'd have done it for you, but you know your stuff better. Here, go crazy.
 <</speech>>
+
 @@.choice;
 <<link "Take the computer" "prologue_04">><</link>>
 @@

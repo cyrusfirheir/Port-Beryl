@@ -1,2 +1,11 @@
 :: statusEffects
-Status Effects
+<<nobr>>
+  <<for _i = 0; _i < $statusEffects.length; _i++>>
+
+    <div class="cardOne">
+      <<= $statusEffects[_i]>>
+    </div>
+
+  <</for>>
+<</nobr>>
+<br>

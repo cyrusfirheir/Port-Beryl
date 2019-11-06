@@ -1,2 +1,11 @@
 :: environmentDetails
-Environment Details
+<<nobr>>
+  <<for _i = 0; _i < $environmentDetails.length; _i++>>
+
+    <div class="cardOne">
+      <<= $environmentDetails[_i]>>
+    </div>
+
+  <</for>>
+<</nobr>>
+<br>

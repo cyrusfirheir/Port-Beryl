@@ -3,16 +3,23 @@
     version 1.0.0
  */
 #notify {
-    position : fixed;
-    display : none;
-    width : 16em;
-    right : -20em; top : 2em;
-    padding : 0.5em;
-    background-color : var(--baseFontColor);
-    color : #000;
-    -webkit-transition : right 0.3s;
-    -moz-transition : right 0.3s;
-    -o-transition : right 0.3s;
-    transition : right 0.3s;
+  font-style: italic;
+  text-align: justify;
+  position : fixed;
+  display : block;
+  z-index: -50;
+  top : 5vh;
+  left : -25vw;
+  width : 20vw;
+  padding : calc(var(--thickness) * 5);
+  background-color : transparent;
+  color : transparent;
+  transition : all 0.25s ease;
 }
-#notify.open { right : 0; }
+
+#notify.open {
+  z-index: 5000;
+  left : 0;
+  background-color : var(--baseFontColor);
+  color : var(--baseColorDark);
+}

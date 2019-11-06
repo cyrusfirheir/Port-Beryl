@@ -9,6 +9,7 @@ Now that you think about it, some part of you is probably glad that you moved ou
 
 Well, at least he's chipper now.
 
+
 @@.choice;
 <<link "Pay attention to what he's saying" "prologue_13a">><</link>>
 <<link "Keep looking out the window" "prologue_13b">><</link>>
@@ -16,7 +17,11 @@ Well, at least he's chipper now.
 
 
 
+
+
+
 :: prologue_13a
+
 
 
 <<speech "Dad">>
@@ -26,7 +31,9 @@ Well, at least he's chipper now.
 <<speech "Mom">>
 He's still alive, eh?
 <</speech>>
+
 You sit by, watching her smile at that name... Who is this person?
+
 
 @@.choice;
 <<link "Ask about Ivan" "prologue_13a2">><</link>>
@@ -35,18 +42,26 @@ You sit by, watching her smile at that name... Who is this person?
 
 
 
+
+
+
 :: prologue_13a2
+
 
 
 <<speech "PC">>
 Who's Ivan?
 <</speech>>
+
 Your father chuckles at that.
+
 
 <<speech "Dad">>
 Ivan's not a who... He's a <i>what.</i> An effing force of nature.
 <</speech>>
+
 Perhaps noticing your face, the expression currently on it, your mother shares the amusement with Dad.
+
 
 <<speech "Mom">>
 Yeah. That sounds about right.
@@ -73,9 +88,11 @@ The girl's a year younger than our peanut here.
 <</speech>>
 
 <<speech "Mom">>
-I've been out of the loop for such a long time... And <i>you</i> never told me about Myrna!
+Why didn't you ever tell me about this?
 <</speech>>
+
 Maybe it's better that you do not take part in this conversation. Since no one's listening to you anyway, you could just mind your own business, couldn't you?
+
 
 @@.choice;
 <<link "Demand the whole story" "prologue_13a3">><</link>>
@@ -84,7 +101,11 @@ Maybe it's better that you do not take part in this conversation. Since no one's
 
 
 
+
+
+
 :: prologue_13a3
+
 
 
 <<speech "PC">>
@@ -94,12 +115,16 @@ But who is this Ivan?
 <<speech "Dad">>
 A childhood friend, you could say... I mean, we were practically brothers who ate and slept at different houses.
 <</speech>>
+
 You frown.
+
 
 <<speech "PC">>
 Why haven't I heard of him then?
 <</speech>>
+
 Shrugging as he takes a left, your father glances back over his shoulder.
+
 
 <<speech "Dad">>
 We lost contact for a while, forgot why friends were needed in the first place... The day I decided to move here, I tracked him down to help me. And guess what? We're still the bestest chums ever. Plus, the dinner is payment for assistance.
@@ -112,13 +137,18 @@ It's been ages since I met him last... It was the wedding, wasn't it?
 <<speech "Dad">>
 I'd say so... That was one hell of a day, you know?
 <</speech>>
+
 As he chats away with your mother, you think over what he said. The thing about needing friends, losing them, and searching again.
+
 
 @@.choice;
 <<link "Wish for at least one good friend" "prologue_14">><</link>>
 <<link "Hope for a few who'll truly stay close" "prologue_14">><</link>>
 <<link "Maybe relying on others isn't the best idea" "prologue_14">><</link>>
 @@
+
+
+
 
 
 
@@ -133,10 +163,14 @@ Sure, the place doesn't look like a small town or anything — the tall office t
 
 From what you remember of the 'research' you did on Port Beryl, a mere two-hundred thousand people live here. Compared to the six million of St. Anne, <i>and</i> the fact that this city is a lot less denser than most, things are bound to look calmer.
 
+
 @@.choice;
 <<link "Things around you look interesting anyway" "prologue_13b2">><</link>>
 <<link "Ask about the name that was just mentioned" "prologue_13a2">><</link>>
 @@
+
+
+
 
 
 
@@ -151,10 +185,14 @@ There are even skaters going around! One falls on her butt because her partner p
 
 It <i>is</i> in practice just a huge playground. Adults being kids all over the stretch of sand.
 
+
 @@.choice;
 <<link "Lower the window a bit to feel the air" "prologue_13b3">><</link>>
 <<link "This Ivan seems pretty significant" "prologue_13a3">><</link>>
 @@
+
+
+
 
 
 
@@ -169,6 +207,7 @@ This is a new start, as the movies portray. A fresh beginning. Opportunities and
 
 What could you possibly want? The beach before your eyes makes you think about it. And perhaps you've never thought about it before either. It's a simple question. What do you want?
 
+
 @@.choice;
 <<link "Wish for at least one good friend" "prologue_14">><</link>>
 <<link "You've never had feelings for anyone before" "prologue_14">><</link>>
@@ -177,15 +216,33 @@ What could you possibly want? The beach before your eyes makes you think about i
 
 
 
-:: prologue_14 [nobr]
-14 <<include "YourHouse">>
 
 
 
-:: prologue_15 [event]
-15 <<include "YourHouse">>
+:: prologue_14
 
 
 
-:: prologue_16 [event]
-16 <<include "YourHouse">>
+<<speech "Dad">>
+And here we are... @@.bigText;Tada!@@
+<</speech>>
+
+You hop out of the car, and rubbing your face with a palm, take it all in.
+
+It's all out of a movie. Just like everything ever since you got off the train. A two leveled house with it's own balcony above the garage. And because of similar ones all around the neighborhood, it certainly looks homey.
+
+
+<<speech "Mom">>
+So you do have a taste after all. The white paint wasn't convincing enough in the photos... This looks fine.
+<</speech>>
+
+<<speech "Dad">>
+@@.smallText;Hehe...@@ I know what you like <<= $Characters.Mom.firstName>>. Braving a white which you wouldn't approve of is the last thing I wanna do.
+<</speech>>
+
+Wondering where you're going to put up, you glance it over, noting details from the other structures around you... Dad did mention that there were two rooms upstairs. You could use one and the other would turn into some sort of an office for him.
+
+
+@@.choice;
+<<link "Ask him about the rooms upstairs" "prologue_15">><</link>>
+@@

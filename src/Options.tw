@@ -6,14 +6,47 @@
 <div class="options">
 
   <div id="optionCategory">
-    <<for _subOption range $subOptions>>
-      <<capture _subOption>>
-        <<link `_subOption.display`>>
-          <<set $currentSubOption = _subOption.id>>
-          <<replace "#subOption" t8n>><<include $currentSubOption>><</replace>>
-        <</link>>
-      <</capture>>
-    <</for>>
+
+    <span id="quests">
+      <<link "Tasks">>
+        <<set $currentSubOption = "quests">>
+        <<run activeSubOption()>>
+        <<replace "#subOption" t8n>>
+          <<include $currentSubOption>>
+            <</replace>><</link>></span>
+
+    <span id="statusEffects">
+      <<link "Stats">>
+        <<set $currentSubOption = "statusEffects">>
+        <<run activeSubOption()>>
+        <<replace "#subOption" t8n>>
+          <<include $currentSubOption>>
+            <</replace>><</link>></span>
+
+    <span id="contacts">
+      <<link "Contacts">>
+        <<set $currentSubOption = "contacts">>
+        <<run activeSubOption()>>
+        <<replace "#subOption" t8n>>
+          <<include $currentSubOption>>
+            <</replace>><</link>></span>
+
+    <span id="environmentDetails">
+      <<link "Environment">>
+        <<set $currentSubOption = "environmentDetails">>
+        <<run activeSubOption()>>
+        <<replace "#subOption" t8n>>
+          <<include $currentSubOption>>
+            <</replace>><</link>></span>
+
+    <span id="gameSettings">
+      <<link "Settings">>
+        <<set $currentSubOption = "gameSettings">>
+        <<run activeSubOption()>>
+        <<replace "#subOption" t8n>>
+          <<include $currentSubOption>>
+            <</replace>><</link>></span>
+
   </div>
 
   <hr>

@@ -2,8 +2,9 @@
 *, *::before, *::after {box-sizing: border-box;}
 
 body {
+  user-select: none;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: var(--baseColorDark);
   color: var(--baseFontColor);
   font-family: var(--bodyFont), var(--fallbackFont);

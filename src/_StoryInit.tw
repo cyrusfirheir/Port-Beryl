@@ -1,18 +1,20 @@
 :: StoryInit
 
-<<set $zoomLevels = [75, 80, 85, 90, 95, 100, 110, 125, 135]>>
+
+<<run getOriginalThickness()>>
+
+
+<<set $zoomLevels = [75, 80, 90, 100, 110, 125, 135]>>
 <<set $zoomLevel = 100>>
 <<run cssZoomLevel()>>
 
 
-<<set $subOptions = [
-  { id: "quests"              , display: "Tasks" }
-, { id: "statusEffects"       , display: "Cards" }
-, { id: "contacts"            , display: "Contacts" }
-, { id: "environmentDetails"  , display: "Environment" }
-, { id: "gameSettings"        , display: "Settings" }
-]>>
 <<set $currentSubOption = "gameSettings">>
+<<set $subOptionAlerts = []>>
+<<set $quests = []>>
+<<set $statusEffects = []>>
+<<set $contacts = []>>
+<<set $environmentDetails = []>>
 
 
 <<run customWrapper(false)>>
@@ -22,3 +24,6 @@
 <<include "AudioInit">>
 <<include "CharacterInit">>
 <<include "StoryTriggersInit">>
+
+
+<<set $ans = {}>>

@@ -55,17 +55,15 @@
 }
 
 .options {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 75vh;
-  /*background-image: radial-gradient(circle, transparent 50%, var(--baseColor));*/
-  border-radius: 1.5vmin;
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: -1;
   left: -75%;
   width: 150%;
-  padding: 5vmin;
-  margin-top: 5vh;
+  height: 80vh;
+  padding: 2.5vmin;
+  margin-top: 0;
 }
 
 #options-container.show .options { z-index: 500; }
@@ -79,6 +77,8 @@
 }
 
 #optionCategory a, #optionCategory a:visited {
+  line-height: 100%;
+  background-image: none;
   background-color: transparent;
   border-color: transparent;
 }
@@ -86,4 +86,29 @@
 #optionCategory a:hover {
   color: var(--linkBorder);
   border-color: transparent;
+}
+
+#subOption {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.optionActive {
+  outline: calc(var(--thickness) * 0.5) solid var(--baseFontColor);
+  animation: floating 1s ease infinite;
+}
+
+.optionAlert::after {
+  content: "";
+  display: inline;
+  position: absolute;
+  z-index: 5;
+  margin-top: calc(var(--thickness) * 2.5);
+  margin-left: calc(var(--thickness) * -5);
+  width: calc(var(--thickness) * 2.5);
+  height: calc(var(--thickness) * 2.5);
+  background-color: var(--linkGlow);
+  border-radius: 50%;
+  color: red;
+  line-height: 75%;
 }

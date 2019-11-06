@@ -88,12 +88,15 @@ hr.formSeparator {
 }
 
 .OfficialForm a {
+  background-image: none;
   background-color: var(--formBaseColorDark);
   color: var(--formFontColor);
   border: var(--thickness) solid var(--formFontColor);
+  padding: calc(var(--thickness) * 4);
 }
 
 .OfficialForm a:hover {
+  background-image: none;
   background-color: var(--formBaseColor);
   color: var(--formFontColor);
   border: var(--thickness) solid var(--formFontColor);

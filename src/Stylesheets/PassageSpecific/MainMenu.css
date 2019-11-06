@@ -1,0 +1,46 @@
+
+#MainMenuBack {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--baseColorDark);
+  background-image: radial-gradient(ellipse at top, #FFB480, transparent)
+                  , radial-gradient(ellipse at bottom left, #6152CC, transparent)
+                  , radial-gradient(ellipse at bottom right, #7FFF76, transparent);
+  animation: hueShift 5s linear infinite;
+}
+
+@keyframes hueShift {
+  100% { filter: hue-rotate(360deg); }
+}
+
+#MainMenuStuff {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10vmin;
+  animation: hueShift 5s linear infinite;
+}
+
+#MainMenuButtons {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (orientation: portrait) {
+  #MainMenuButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

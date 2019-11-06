@@ -1,0 +1,109 @@
+:: prologue_15
+
+
+<<speech "PC">>
+Is the balcony attached to one of the free rooms?
+<</speech>>
+
+<<speech "Dad">>
+Interested in the cooler option, I see... Yip! You can have it if you want! But have a looksie before you commit, though. The other room in the back is a bit bigger.
+<</speech>>
+
+You nod and turn back to watching your new home. Hands on hips, lips chapped a bit from the chill, and head warm under the dark blue beanie Mom got you last Christmas, you sigh.
+
+
+<<speech "Dad">>
+C'mon guys! We've got to visit the school before evening too!
+<</speech>>
+
+At your father's enthusiastic herding, Mom and you quickly find yourselves in a wide dining hall, the kitchen presenting itself in all it's neat glory... Anything to do with food and Dad has his hands there first.
+
+
+<<speech "Dad">>
+You guys hungry?
+<</speech>>
+
+@@.choice;
+<<link "Tell him you're starving" "prologue_16">>
+  <<set $ans["prologue_16"] = {
+                                one: "You point at your stomach and look at him."
+                              , two: "There's a vortex down here, Dad..."
+                              }>>
+  <<run gameDataAdd("quests", `You're <i>starving.</i> Get Food.`)>>
+  <<run gameDataAdd("statusEffects", "Strong Hunger")>>
+<</link>>
+<<link "Shrug and say yes" "prologue_16">>
+  <<set $ans["prologue_16"] = {
+                                one: "Lifting your shoulders, you nod."
+                              , two: "I guess..."
+                              }>>
+  <<run gameDataAdd("statusEffects", "Mild hunger")>>
+<</link>>
+<<link "Shake your head and deny" "prologue_16">>
+  <<set $ans["prologue_16"] = {
+                                one: "You close your eyes and say nay to him."
+                              , two: "Not really."
+                              }>>
+<</link>>
+@@
+
+
+
+
+
+
+:: prologue_16
+
+
+<<= $ans[passage()].one>>
+
+
+<<speech "PC">>
+<<= $ans[passage()].two>>
+<</speech>>
+
+<<speech "Mom">>
+I'm tired... I need a couple hours of sleep in the <i>least</i>, if I want to function properly.
+<</speech>>
+
+Smiling like a conspirator, your father glides in closer, suddenly donning his 'suave' form.
+
+
+<<speech "Dad">>
+Then go get some. I picked the softest bed I could find for you.
+<</speech>>
+
+You stare as the forty-seven-year-old pecks your mother's cheek — wickedly close to her lips — and nudges her towards their bedroom.
+
+And before disappearing through the doorway, she pauses for a declaration,
+
+
+<<speech "Mom">>
+You're forgiven for making me quit my job and whisking us away to here...
+<</speech>>
+
+Your father does a celebratory dance at winning his bet, and holds out a palm before you.
+
+
+<<speech "Dad">>
+Pay up peanut.
+<</speech>>
+
+@@.choice;
+<<link "Give him the promised amount" "prologue_16a">><</link>>
+<<link "Be a peanut for real and scam him" "prologue_16b">><</link>>
+@@
+
+
+
+
+
+
+:: prologue_16a
+
+
+
+
+
+
+:: prologue_16b

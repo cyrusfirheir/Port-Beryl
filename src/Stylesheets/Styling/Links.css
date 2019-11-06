@@ -3,7 +3,7 @@ a, a:visited {
   display: inline-block;
   user-select: none;
   color: var(--link);
-  background-color: var(--linkBack);
+  background-image: linear-gradient(180deg, var(--linkBack) 90%, transparent 90%);
   border: var(--thickness) solid var(--linkBorder);
   border-radius: calc(var(--thickness) * 2);
   padding: 0 calc(var(--thickness) * 4);
@@ -14,7 +14,7 @@ a, a:visited {
 a:hover {
   text-decoration: none;
   color: var(--linkHover);
-  background-color: var(--linkHoverBack);
+  background-image: linear-gradient(180deg, var(--linkHoverBack) 90%, transparent 90%);
   border: var(--thickness) solid var(--linkHoverBorder);
   border-radius: 0;
   position: relative;
@@ -27,7 +27,7 @@ a:hover::before {
   display: inline;
   position: absolute;
   top: calc(var(--thickness) * -1);
-  left: calc(var(--thickness) * -1);
+  left: calc(var(--thickness) * -1.5);
   bottom: calc(var(--thickness) * -1);
   width: calc(var(--thickness) * 5);
   z-index: 5;
@@ -41,7 +41,7 @@ a:hover::after {
   display: inline;
   position: absolute;
   top: calc(var(--thickness) * -1);
-  right: calc(var(--thickness) * -1);
+  right: calc(var(--thickness) * -1.5);
   bottom: calc(var(--thickness) * -1);
   width: calc(var(--thickness) * 5);
   z-index: 5;
@@ -51,6 +51,8 @@ a:hover::after {
 }
 
 a:active {
+  background-color: var(--linkHoverBack);
+  background-image: none;
   animation: presence 0.5s ease;
 }
 
@@ -58,7 +60,6 @@ a:active {
   0% {
     outline: var(--thickness) solid var(--baseFontColor);
     outline-offset: calc(var(--thickness) * 5);
-    opacity: 0.5;
   }
 }
 
@@ -79,9 +80,8 @@ a:active {
 @keyframes floatPseudoLeft {
   50% {
     top: calc(var(--thickness) * -3);
-    left: calc(var(--thickness) * -4);
+    left: calc(var(--thickness) * -4.5);
     bottom: calc(var(--thickness) * -3);
-    opacity: 0.75;
   }
   100% { filter: hue-rotate(360deg); }
 }
@@ -89,9 +89,8 @@ a:active {
 @keyframes floatPseudoRight {
   50% {
     top: calc(var(--thickness) * -3);
-    right: calc(var(--thickness) * -4);
+    right: calc(var(--thickness) * -4.5);
     bottom: calc(var(--thickness) * -3);
-    opacity: 0.75;
   }
   100% { filter: hue-rotate(360deg); }
 }

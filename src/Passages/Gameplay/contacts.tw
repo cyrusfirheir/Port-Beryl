@@ -1,2 +1,11 @@
 :: contacts
-Contacts
+<<nobr>>
+  <<for _i = 0; _i < $contacts.length; _i++>>
+
+    <div class="cardOne">
+      <<= $contacts[_i]>>
+    </div>
+
+  <</for>>
+<</nobr>>
+<br>

@@ -3,3 +3,4 @@
 <<run SimpleAudio.tracks.add("mouseOverLink", "Media/Sounds/mouseOverLink.mp3")>>
 <<run SimpleAudio.tracks.add("mouseDownLink", "Media/Sounds/mouseDownLink.mp3")>>
 <<run SimpleAudio.tracks.add("menuSlide", "Media/Sounds/menuSlide.mp3")>>
+<<run SimpleAudio.tracks.add("notif", "Media/Sounds/notif.mp3")>>

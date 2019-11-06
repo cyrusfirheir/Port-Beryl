@@ -1,19 +1,27 @@
 :: prologue_09 [fade-1s]
 
 
+
 <<speech "Dad">>
 @@.bigText;C'mon now, get in here!@@ We've got stuff to do!
 <</speech>>
+
 Struggling with the huge suitcase you packed, you somehow manage to get through the crowd of people who exited the train with you and see the man standing near the open boot of his pickup. Your father does know how to plan things...
+
 
 <<speech "PC">>
 @@.smallText;Chill out, jeez...@@ I'm coming!
 <</speech>>
+
 Who the hell would have thought that he'd been cooking this idea in his head for months?
+
 
 @@.choice;
 <<link "Go to him" "prologue_10">><</link>>
 @@
+
+
+
 
 
 
@@ -26,9 +34,13 @@ You've left behind the few friends you had back there, somehow managed to convin
 
 Handing off the case to your father, you walk around the truck, thinking about just how fast everything changed.
 
+
 @@.choice;
 <<link "Get in" "prologue_11">><</link>>
 @@
+
+
+
 
 
 
@@ -36,6 +48,7 @@ Handing off the case to your father, you walk around the truck, thinking about j
 
 
 You climb inside and shimmy over to the other end of the backseat, slumping into the softness. After the five hours on that train, pretty much everything feels like heaven...
+
 
 <<speech "Dad">>
 Everyone set?
@@ -49,9 +62,13 @@ Cut the camping trip BS, <<= $Characters.Dad.firstName>>... @@.smallText;I'm tir
 Aw... @@.bigText;Off we go then!@@
 <</speech>>
 
+
 @@.choice;
 <<link "Lean back" "prologue_12">><</link>>
 @@
+
+
+
 
 
 
@@ -63,6 +80,7 @@ It's already September and school's begun in most places. You don't know how Val
 Does the school really host the biggest cultural events in the entire city?
 
 And all those rumors about the entire faculty being a young batch of fresh minds? They said that even the principal was under fifty... Back at St. Anne, your middle-school teachers were dinosaurs who didn't tolerate anything.
+
 
 @@.choice;
 <<link "Look out the window" "prologue_13">><</link>>

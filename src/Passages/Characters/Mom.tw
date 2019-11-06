@@ -1,7 +1,7 @@
 :: CharMom
 
 <<set $Characters.Mom = {
-    firstName   : "Caja"
+    firstName   : "Kaja"
   , middleName  : ""
   , lastName    : "Stevens"
   , sex         : "female"
