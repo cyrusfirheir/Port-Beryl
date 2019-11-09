@@ -1,11 +1,21 @@
 :: contacts
 <<nobr>>
+
+<div class="contactCards">
+
   <<for _i = 0; _i < $contacts.length; _i++>>
 
-    <div class="cardOne">
+    <div class="cardContact">
+      <span class="contactImage">
+        <img @src="'Media/Images/Characters/' + $contacts[_i] + '/contact.svg'">
+      </span>
       <<= $contacts[_i]>>
+      <br>
+      <<= $Characters[$contacts[_i]].opinion.PC[2]>>
     </div>
 
   <</for>>
+
+</div>
+
 <</nobr>>
-<br>

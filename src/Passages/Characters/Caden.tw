@@ -1,10 +1,18 @@
 :: CharCaden
 
-<<set $Characters.Caden = {
-    firstName   : "Caden"
+<<set $Characters.Caden.id = {
+    id          : "Caden"
+  , firstName   : "Caden"
   , middleName  : "Daniel"
   , lastName    : "Nicholson"
   , sex         : "male"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharCadenRelations

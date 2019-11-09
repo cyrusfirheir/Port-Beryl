@@ -1,10 +1,21 @@
 :: CharZlata
 
 <<set $Characters.Zlata = {
-    firstName   : "Zlata"
+    id          : "Zlata"
+  , firstName   : "Zlata"
   , middleName  : "Ivana"
   , lastName    : "De Boer"
   , sex         : "female"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharZlataRelations
+
+<<run setOpinion("Zlata", "Ivan", 4)>>
+<<run setOpinion("Zlata", "Zlata", 4)>>

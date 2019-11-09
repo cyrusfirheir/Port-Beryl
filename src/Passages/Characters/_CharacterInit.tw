@@ -18,4 +18,7 @@
 <<for _i = 0; _i < Object.keys($Characters).length; _i++>>
   <<set _charPassage = "Char" + Object.keys($Characters)[_i]>>
   <<include _charPassage>>
+  <<run initRelations(Object.keys($Characters)[_i])>>
+  <<set _charRelPassage = "Char" + Object.keys($Characters)[_i] + "Relations">>
+  <<include _charRelPassage>>
 <</for>>

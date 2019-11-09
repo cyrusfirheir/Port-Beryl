@@ -1,10 +1,18 @@
 :: CharNisa
 
 <<set $Characters.Nisa = {
-    firstName   : "Nisa"
+    id          : "Nisa"
+  , firstName   : "Nisa"
   , middleName  : ""
   , lastName    : "Stevens"
   , sex         : "female"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharNisaRelations

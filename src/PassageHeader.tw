@@ -6,7 +6,7 @@
 
 <div class="uiHeader">
 
-  <<link "...">>
+  <<link "Logs">>
     <<run showOptions()>>
   <</link>>
 

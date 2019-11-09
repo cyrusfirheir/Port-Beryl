@@ -1,2 +1,2 @@
 :: Start
-<<include "prologue_15">>
+<<goto "prologue_15">>

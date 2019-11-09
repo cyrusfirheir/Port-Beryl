@@ -1,10 +1,26 @@
 :: CharDad
 
 <<set $Characters.Dad = {
-    firstName   : "Andy"
+    id          : "Dad"
+  , firstName   : "Andy"
   , middleName  : "Mosher"
   , lastName    : "Stevens"
   , sex         : "male"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharDadRelations
+
+<<run setOpinion("Dad", "PC", 4)>>
+<<run setOpinion("Dad", "Dad", 4)>>
+<<run setOpinion("Dad", "Mom", 4, true)>>
+<<run setOpinion("Dad", "Neil", 4)>>
+<<run setOpinion("Dad", "Nisa", 4)>>
+<<run setOpinion("Dad", "Ivan", 4)>>
+<<run setOpinion("Dad", "Zlata", 4)>>

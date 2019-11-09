@@ -5,7 +5,10 @@ Sound of the train entering a tunnel is all it takes for you to wake up. It's al
 
 
 @@.choice;
-<<link "Sit up straight" "prologue_01">><</link>>
+<<link "Sit up straight" "prologue_01">>
+  <<run gameDataAdd("contacts", "Dad")>>
+  <<run gameDataAdd("contacts", "Mom")>>
+<</link>>
 @@
 
 

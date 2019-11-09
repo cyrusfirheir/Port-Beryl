@@ -8,10 +8,10 @@
   <div id="optionCategory">
 
     <span id="quests">
-      <<link "Tasks">>
+      <<link "Todo">>
         <<set $currentSubOption = "quests">>
         <<run activeSubOption()>>
-        <<replace "#subOption" t8n>>
+        <<replace "#subOption">>
           <<include $currentSubOption>>
             <</replace>><</link>></span>
 
@@ -19,7 +19,7 @@
       <<link "Stats">>
         <<set $currentSubOption = "statusEffects">>
         <<run activeSubOption()>>
-        <<replace "#subOption" t8n>>
+        <<replace "#subOption">>
           <<include $currentSubOption>>
             <</replace>><</link>></span>
 
@@ -27,7 +27,7 @@
       <<link "Contacts">>
         <<set $currentSubOption = "contacts">>
         <<run activeSubOption()>>
-        <<replace "#subOption" t8n>>
+        <<replace "#subOption">>
           <<include $currentSubOption>>
             <</replace>><</link>></span>
 
@@ -35,7 +35,7 @@
       <<link "Environment">>
         <<set $currentSubOption = "environmentDetails">>
         <<run activeSubOption()>>
-        <<replace "#subOption" t8n>>
+        <<replace "#subOption">>
           <<include $currentSubOption>>
             <</replace>><</link>></span>
 
@@ -43,7 +43,7 @@
       <<link "Settings">>
         <<set $currentSubOption = "gameSettings">>
         <<run activeSubOption()>>
-        <<replace "#subOption" t8n>>
+        <<replace "#subOption">>
           <<include $currentSubOption>>
             <</replace>><</link>></span>
 

@@ -1,10 +1,26 @@
 :: CharMom
 
 <<set $Characters.Mom = {
-    firstName   : "Kaja"
+    id          : "Mom"
+  , firstName   : "Kaja"
   , middleName  : ""
   , lastName    : "Stevens"
   , sex         : "female"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharMomRelations
+
+<<run setOpinion("Mom", "PC", 4)>>
+<<run setOpinion("Mom", "Dad", 4, true)>>
+<<run setOpinion("Mom", "Mom", 4)>>
+<<run setOpinion("Mom", "Neil", 4)>>
+<<run setOpinion("Mom", "Nisa", 4)>>
+<<run setOpinion("Mom", "Ivan", 4)>>
+<<run setOpinion("Mom", "Zlata", 4)>>

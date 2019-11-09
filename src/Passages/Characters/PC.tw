@@ -1,10 +1,18 @@
 :: CharPC
 
 <<set $Characters.PC = {
-    firstName   : "Lara"
+    id          : "PC"
+  , firstName   : "Lara"
   , middleName  : ""
   , lastName    : "Stevens"
   , sex         : "female"
   , birthday    : [0,0]
 
 }>>
+
+
+
+
+
+
+:: CharPCRelations
