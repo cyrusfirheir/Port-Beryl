@@ -1,4 +1,6 @@
 :: gameSettings
+<<link "Save to disk">><<run exportFileToDisk("pb-" + Util.slugify($saveString) + dateTimeString(), $saveDataString)>>
+<</link>>
 Zoom:
 <<nobr>>
   <<for _zoom range $zoomLevels>>
@@ -12,6 +14,7 @@ Zoom:
   <</for>>
 <</nobr>>
 
+<<link "Return to Main Menu" "MainMenu">><</link>>
 <<link "Restart">>
   <<run Engine.restart()>>
 <</link>>

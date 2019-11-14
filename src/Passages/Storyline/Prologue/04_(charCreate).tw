@@ -22,35 +22,36 @@
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
         <<set $Characters.PC.sex = "male">>
-        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
+        <<replace "#sex">><<= $Characters.PC.sex.toUpperFirst()>><</replace>>
       <</customButton>>
       Male
     @@
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
         <<set $Characters.PC.sex = "female">>
-        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
+        <<replace "#sex">><<= $Characters.PC.sex.toUpperFirst()>><</replace>>
       <</customButton>>
     Female
     @@
     @@.customRadioButtonSpacing;
       <<customButton "customRadioButton">>
         <<set $Characters.PC.sex = "other">>
-        <<replace "#sex">><<= setup.toSentenceCase($Characters.PC.sex)>><</replace>>
+        <<replace "#sex">><<= $Characters.PC.sex.toUpperFirst()>><</replace>>
       <</customButton>>
     Other
     @@
     <</nobr>>
   </fieldset>
+<span id = "warning"></span>
   <<link "Next">>
     <<if ($Characters.PC.firstName == "") or ($Characters.PC.lastName == "") or ($Characters.PC.sex == "")>>
       <<replace "#warning">>
         @@.i;.smallText;One or more fields/options marked * are blank. Please fill them in.@@
       <</replace>>
     <<else>>
-      <<set $Characters.PC.firstName = setup.toSentenceCase($Characters.PC.firstName)>>
-      <<set $Characters.PC.middleName = setup.toSentenceCase($Characters.PC.middleName)>>
-      <<set $Characters.PC.lastName = setup.toSentenceCase($Characters.PC.lastName)>>
+      <<set $Characters.PC.firstName = $Characters.PC.firstName.toUpperFirst()>>
+      <<set $Characters.PC.middleName = $Characters.PC.middleName.toUpperFirst()>>
+      <<set $Characters.PC.lastName = $Characters.PC.lastName.toUpperFirst()>>
       <<set $Characters.Dad.lastName = $Characters.PC.lastName>>
       <<set $Characters.Mom.lastName = $Characters.PC.lastName>>
       <<set $Characters.Neil.lastName = $Characters.PC.lastName>>
@@ -58,8 +59,6 @@
       <<goto "prologue_05">>
     <</if>>
   <</link>>
-
-  <span id = "warning"></span>
 
   </p>
 </div>

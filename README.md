@@ -31,6 +31,8 @@ A text-based life sim of young high-school characters set in the fictional city 
 - Reworks event system to be more legible and friendly. Can take in functions from the SugarCube 2 API as triggers. Each function API has to be explicitly mentioned in the `StoryTriggers.js` file.
 - Adds notifications about the logs which hold Quests, Status Effects, Contact updates, etc.
 - `Opinions.js`
+- Save system configured as per requirements.
+- Main menu and Disclaimer stuff done.
 - *Todo:*
 
 
@@ -46,6 +48,7 @@ A text-based life sim of young high-school characters set in the fictional city 
   - *Todo:*
     - (A lot)
 - **Art:**
+  - Placeholder character art from online avatar generator.
   - *...crickets...*
 - **Sound:**
   - Mouse-Hover, Mouse-Down, and Menu-Slide.

@@ -1,6 +1,22 @@
 :: StoryInit
 
 
+<<set $debug = true>>
+
+
+<<set $year = 1>>
+<<set $week = 0>>
+<<set $day = 0>>
+<<set $days = [   "Sunday"
+                , "Monday"
+                , "Tuesday"
+                , "Wednesday"
+                , "Thursday"
+                , "Friday"
+                , "Saturday"
+              ]>>
+
+
 <<run getOriginalThickness()>>
 
 

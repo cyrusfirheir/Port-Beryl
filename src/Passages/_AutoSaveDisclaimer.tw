@@ -1,0 +1,16 @@
+:: AutoSaveDisclaimer [noOptions]
+<<nobr>>
+  <<set $saveSlot = getSaveSlot()>>
+  <<set $saveString = "newGame-noData">>
+  <<set $saveDataString = "newGame-noData">>
+<</nobr>>
+<p align=center>
+This game uses autosave. Whenever the following icon is displayed on the top right corner,
+<img src="Media\Images\UI_elements\AutoSave.svg" width=30vmin>
+your progress is saved into the first available save slot.
+
+@@.choice;
+<<button "CONTINUE" "prologue_00">><</button>>
+@@
+
+</p>

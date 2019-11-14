@@ -76,6 +76,10 @@
   align-content: center;
 }
 
+#optionCategory span {
+  flex: 1 0 20%;
+}
+
 #optionCategory a, #optionCategory a:visited {
   line-height: 100%;
   background-image: none;
@@ -111,4 +115,16 @@
   border-radius: 50%;
   color: red;
   line-height: 75%;
+}
+
+#auto-save-icon {
+  text-align: right;
+  padding: calc(var(--thickness) * 10);
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  right: 0;
+  width: calc(var(--thickness) * 35);
+  height: calc(var(--thickness) * 35);
+  display: block;
 }

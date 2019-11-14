@@ -61,6 +61,9 @@ $(document).on('keydown', function(ev) {
   	case "Escape":
   		showOptions();
   		break;
+    case "KeyR":
+      if ((State.variables.debug) && !(Story.get(passage()).tags.includes("noOptions"))) { Engine.restart(); }
+      break;
 	}
 });
 
@@ -69,9 +72,17 @@ $('#story').on('mouseover', 'a', function() {
   let sound = SimpleAudio.tracks.get("mouseOverLink").clone();
   sound.volume(0.5).play();
 });
+$(document).on('mouseover', ':button', function() {
+  let sound = SimpleAudio.tracks.get("mouseOverLink").clone();
+  sound.volume(0.5).play();
+});
 
 //click stuff
 $('#story').on('mousedown', 'a', function() {
+  let sound = SimpleAudio.tracks.get("mouseDownLink").clone();
+  sound.volume(0.5).play();
+});
+$(document).on('mousedown', ':button', function() {
   let sound = SimpleAudio.tracks.get("mouseDownLink").clone();
   sound.volume(0.5).play();
 });

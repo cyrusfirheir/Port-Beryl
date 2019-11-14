@@ -10,7 +10,7 @@
   background-image: radial-gradient(ellipse at top, #FFB480, transparent)
                   , radial-gradient(ellipse at bottom left, #6152CC, transparent)
                   , radial-gradient(ellipse at bottom right, #7FFF76, transparent);
-  animation: hueShift 5s linear infinite;
+  animation: hueShift 10s linear infinite;
 }
 
 @keyframes hueShift {
@@ -28,7 +28,7 @@
   justify-content: space-around;
   flex-direction: column;
   padding: 10vmin;
-  animation: hueShift 5s linear infinite;
+  animation: hueShift 10s linear infinite;
 }
 
 #MainMenuButtons {

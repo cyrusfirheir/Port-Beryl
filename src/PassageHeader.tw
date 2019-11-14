@@ -1,6 +1,16 @@
 :: PassageHeader [nobr]
 
-<<if !(Story.get(passage()).tags.includes("noOptions"))>>
+<<if (Story.get(passage()).tags.includes("mainMenu"))>>
+  <div id="MainMenuBack"></div>
+<</if>>
+
+<<if (!Story.get(passage()).tags.includes("noOptions"))>>
+
+<<if (Story.get(passage()).tags.includes("autosave"))>>
+  <span id="auto-save-icon">
+    <img src="Media\Images\UI_elements\AutoSave.svg">
+  </span>
+<</if>>
 
 <p align="center">
 
@@ -9,6 +19,7 @@
   <<link "Logs">>
     <<run showOptions()>>
   <</link>>
+
 
   <div id="options-container">
     <<include "Options">>

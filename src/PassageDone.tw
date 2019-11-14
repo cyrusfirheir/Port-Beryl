@@ -3,3 +3,9 @@
 <<run cssZoomLevel()>>
 
 <<run checkForEvents()>>
+
+<<if (Story.get(passage()).tags.includes("autosave"))>>
+  <<set $saveString = $Characters.PC.firstName+" - "+$days[$day]+", Week "+$week+", Year "+$year>>
+  <<run Save.slots.save($saveSlot, $saveString)>>
+  <<set $saveDataString = Save.serialize()>>
+<</if>>
